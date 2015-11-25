@@ -1,0 +1,270 @@
+/* 
+Project Name: HBL
+Client: Me
+Author: Clementine Brown
+*/
+
+/******************************************
+/* COLOURS
+/*******************************************/
+
+/* add a list of colours used in the project */
+
+/******************************************
+/* HELPER CLASSES
+/*******************************************/
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+     content: " ";
+     display: table;
+}
+.clearfix:after {
+     clear:both;
+}
+
+.is-hidden {
+     display: none;
+}
+.is-visible {
+     display: block;
+}
+
+/******************************************
+/* SENSIBLE DEFAULTS                   
+/*******************************************/
+
+* {
+     box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+
+html {
+  font-size: 16px;
+  color: #4F4F4F;
+}
+
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+
+p {
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    padding: 0 1rem .2rem 1rem;
+}
+h1 {
+    font-size: 1.2rem;
+    font-family: 'Abril Fatface';
+    font-weight: 700;
+}
+h3 {
+    font-size: 1.2rem;
+    font-family: 'Abril Fatface';
+    font-weight: 400;
+    font-style: italic;
+    padding-left: .5rem;
+}
+a {
+    text-decoration: none;
+    color: #4F4F4F;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+/
+/******************************************
+/* GRID                   
+/*******************************************/
+
+.grid-row {
+
+}
+.grid-column {
+    float: left;
+}
+.grid-whole {width: 100%}
+.grid-half {width: 50%}
+.grid-third {width: 33.33%}
+.grid-quarter {width: 25%}
+.grid-fifth {width: 20%}
+.grid-two-third {width: 66.66%}
+.grid-three-quarter {width: 75%}
+.grid-two-fifth {width: 40%}
+.grid-three-fifth {width: 60%}
+.grid-four-fifth {width: 80%}
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+.container {
+    max-width: 1210px;
+    height: 2000px;
+    margin: 5rem auto;
+/*    background-color: #EDEDED;*/
+}
+.main-content {
+    margin-top: 5rem;
+}
+.footer {
+    background-color: #87D1D2;
+    color: #2D2E67;
+    padding: .5rem;
+    margin-top: 3rem;
+}
+
+/******************************************
+/* HEADER                   
+/*******************************************/
+
+.header-content {
+    position: fixed;
+    top: 0;
+    background-color: rgba(255,255,255, .8);
+    width: 100%;
+    z-index: 1;
+    border-bottom: 1px solid rgba(0,0,0, .1);
+}
+.header-content a,
+.header-content h1 {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.header-content.shrink a {
+    font-size:.7rem;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.header-content.shrink h1 {
+    font-size:1rem;
+    margin-left: .3rem;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.header-content.shrink .logo {
+    margin: .2rem;
+}
+.header-content.shrink nav ul {
+  margin: .8rem 0;
+}
+.header-content.shrink ul li {
+  margin-right: 1.5rem
+}
+.header-content.shrink ul li:last-child {
+  margin-right: 0;
+}
+.header {
+  max-width: 1210px;
+  margin: 0 auto;
+}
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
+.logo {
+    float: left;
+    margin: .5rem;
+}
+ul li {
+    display: inline;
+    padding: .5rem;
+    margin-right: 2.5rem
+}
+nav ul {
+    float: right;
+    margin: 1.5rem 0;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+.filter {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.burger {
+    display: none;
+}
+.frame {
+  position: relative;
+  margin: .5rem;
+  overflow: hidden;
+}
+.frame img {
+  transition:all .2s ease-in-out;
+  -webkit-transition:all .2s ease-in-out;
+  -moz-transition:all .2s ease-in-out;
+  -ms-transition:all .2s ease-in-out;
+  -o-transition:all .2s ease-in-out;
+}
+.frame img:hover {
+  transform:scale(1.1);
+  -webkit-transform:scale(1.1);
+  -moz-transform:scale(1.1);
+  -ms-transform:scale(1.1);
+  -o-transform:scale(1.1);
+}
+.delay {
+  animation-delay: 2s;
+}
+/******************************************
+/* RESPONSIVE LAYOUT                   
+/*******************************************/
+@media only screen and (max-width:980px){
+  .container {
+    width:100%;
+  }
+  .grid-third {
+    width:50%;
+    margin: 0 auto;
+  }
+  nav ul li a {
+    font-size: .7rem;
+  }
+}
+@media only screen and (max-width:750px){
+  .container {
+    width:100%;
+  }
+  .grid-third {
+    width: 100%;
+    float:none;
+    margin: 0 auto;
+  }
+  nav ul {
+    display: none;
+  }
+  .burger {
+    display: block;
+    float: right;
+    padding: 1.5rem 1rem;
+  }
+}
+@media only screen and (max-width:520px){
+  .container {
+    width:100%;
+  }
+  .grid-column {
+    float:none;
+    width:100%;
+  }
+  .logo {
+    float:none;
+    margin:0 auto;
+  }
+/*  nav ul {
+    display: none;
+  }*/
+}
