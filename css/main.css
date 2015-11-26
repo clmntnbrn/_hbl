@@ -17,18 +17,18 @@ Author: Clementine Brown
 /* Clearfix */
 .clearfix:before,
 .clearfix:after {
-     content: " ";
-     display: table;
+  content: " ";
+  display: table;
 }
 .clearfix:after {
-     clear:both;
+  clear:both;
 }
 
 .is-hidden {
-     display: none;
+  display: none;
 }
 .is-visible {
-     display: block;
+  display: block;
 }
 
 /******************************************
@@ -36,7 +36,7 @@ Author: Clementine Brown
 /*******************************************/
 
 * {
-     box-sizing: border-box;
+  box-sizing: border-box;
 }
 img {
   max-width: 100%;
@@ -52,22 +52,22 @@ html {
 /*******************************************/
 
 p {
-    font-size: 1rem;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 100;
-    padding: 0 1rem .2rem 1rem;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  padding: 0 1rem .2rem 1rem;
 }
 h1 {
-    font-size: 1.2rem;
-    font-family: 'Abril Fatface';
-    font-weight: 700;
+  font-size: 1.2rem;
+  font-family: 'Abril Fatface';
+  font-weight: 700;
 }
 h3 {
-    font-size: 1.2rem;
-    font-family: 'Abril Fatface';
-    font-weight: 400;
-    font-style: italic;
-    padding-left: .5rem;
+  font-size: 1.2rem;
+  font-family: 'Abril Fatface';
+  font-weight: 400;
+  font-style: italic;
+  padding-left: .5rem;
 }
 
 /
@@ -79,7 +79,7 @@ h3 {
 
 }
 .grid-column {
-    float: left;
+  float: left;
 }
 .grid-whole {width: 100%}
 .grid-half {width: 50%}
@@ -97,18 +97,18 @@ h3 {
 /*******************************************/
 
 .container {
-    max-width: 1210px;
-    margin: 5rem auto;
+  max-width: 1210px;
+  margin: 6rem auto;
 /*    background-color: #EDEDED;*/
 }
 .main-content {
-    margin-top: 5rem;
+  margin-top: 5rem;
 }
 .footer {
-    background-color: #87D1D2;
-    color: #2D2E67;
-    padding: .5rem;
-    margin-top: 3rem;
+  background-color: #87D1D2;
+  color: #2D2E67;
+  padding: .5rem;
+  margin-top: 3rem;
 }
 
 /******************************************
@@ -116,30 +116,36 @@ h3 {
 /*******************************************/
 
 .header-content {
-    position: fixed;
-    top: 0;
-    background-color: rgba(255,255,255, .8);
-    width: 100%;
-    z-index: 1;
-    border-bottom: 1px solid rgba(0,0,0, .1);
+  position: fixed;
+  top: 0;
+  background-color: rgba(255,255,255, .8);
+  width: 100%;
+  z-index: 1;
+  border-bottom: 1px solid rgba(0,0,0, .1);
 }
+/*.header-content:after {
+  content: '';
+  background-image: url(../images/fancy_deboss.png);
+  background-repeat: repeat;
+  opacity: 0.5;
+}*/
 .header-content a,{
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .header-content.shrink li a {
-    font-size:.7rem;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
+  font-size:.7rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .header-content.shrink h1 {
-    font-size:1rem;
-    margin-left: .3rem;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
+  font-size:1rem;
+  margin-left: .3rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .header-content.shrink .logo {
     margin: .2rem;
@@ -163,8 +169,8 @@ h3 {
 /*******************************************/
 
 .logo {
-    float: left;
-    margin: .5rem;
+  float: left;
+  margin: .5rem;
 }
 .logo a {
   text-decoration: none;
@@ -175,38 +181,40 @@ h3 {
 }
 
 nav ul {
-    float: right;
-    margin: 1.5rem 0;
+  float: right;
+  margin: 1.5rem 0;
 }
 nav ul li {
-    display: inline;
-    margin-right: 2rem;
+  display: inline;
+  margin-right: 2rem;
 }
 nav ul li:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 nav ul li a {
-    text-decoration: none;
-    color: #4F4F4F;
-    font-family: 'Open Sans';
-    font-weight: 400;
-    font-size: 0.9rem;
-    padding: .5rem;
+  text-decoration: none;
+  color: #4F4F4F;
+  font-family: 'Open Sans';
+  font-weight: 100;
+  font-size: 0.9rem;
+  padding: .5rem;
 }
 nav ul li a:hover {
   background-color: #fe332f;
   color: #fff;
-  border-radius: 3px;
-  transition: background-color color 0.3s ease-in-out;
+  /*border-radius: 3px;*/
+  transition: background-color 0.3s ease-in-out;
 }
 
 .filter {
-    text-align: center;
-    margin: 2em 0;
+  text-align: center;
+  margin: 2em 0;
 }
 
 .burger {
-    display: none;
+  display: none;
+  text-decoration: none;
+  color: #4F4F4F;
 }
 .frame {
   position: relative;
@@ -230,6 +238,13 @@ nav ul li a:hover {
 }
 .delay {
   animation-delay: 2s;
+}
+.img-contain {
+  text-align: center;
+}
+.gallery {
+  max-width: 70%;
+  margin-bottom: 3rem;
 }
 /******************************************
 /* RESPONSIVE LAYOUT                   
