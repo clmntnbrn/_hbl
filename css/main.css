@@ -8,7 +8,12 @@ Author: Clementine Brown
 /* COLOURS
 /*******************************************/
 
-/* add a list of colours used in the project */
+/* 
+
+color: #4F4F4F
+hover: #fe332f
+
+ */
 
 /******************************************
 /* HELPER CLASSES
@@ -84,7 +89,7 @@ h3 {
 .grid-whole {width: 100%}
 .grid-half {width: 50%}
 .grid-third {width: 33.33%}
-.grid-quarter {width: 25%}
+.grid-quarter {width: 25%;}
 .grid-fifth {width: 20%}
 .grid-two-third {width: 66.66%}
 .grid-three-quarter {width: 75%}
@@ -105,12 +110,18 @@ h3 {
   margin-top: 5rem;
 }
 .footer {
-  background-color: #87D1D2;
+  background-color: #ccc;
   color: #2D2E67;
   padding: .5rem;
   margin-top: 3rem;
 }
-
+.footer a {
+  text-decoration: none;
+  color: #4F4F4F;
+}
+.footer a:hover {
+  color: #fe332f;
+}
 /******************************************
 /* HEADER                   
 /*******************************************/
@@ -123,29 +134,28 @@ h3 {
   z-index: 1;
   border-bottom: 1px solid rgba(0,0,0, .1);
 }
+.header-content * {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
 /*.header-content:after {
   content: '';
   background-image: url(../images/fancy_deboss.png);
   background-repeat: repeat;
   opacity: 0.5;
 }*/
-.header-content a,{
+/*.header-content a,{
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
-}
+}*/
 .header-content.shrink li a {
   font-size:.7rem;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
 }
 .header-content.shrink h1 {
   font-size:1rem;
   margin-left: .3rem;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
 }
 .header-content.shrink .logo {
     margin: .2rem;
@@ -179,12 +189,12 @@ h3 {
 .logo a:hover {
   color: #fe332f;
 }
-
 nav ul {
   float: right;
   margin: 1.5rem 0;
 }
 nav ul li {
+  position: relative;
   display: inline;
   margin-right: 2rem;
 }
@@ -205,12 +215,23 @@ nav ul li a:hover {
   /*border-radius: 3px;*/
   transition: background-color 0.3s ease-in-out;
 }
-
+nav ul ul {
+  display: none;
+  background-color: rgba(255,255,255, .8);
+  top:100%;
+  left:0;
+  position: absolute;
+}
+nav ul ul li {
+  margin: .8rem;
+}
+nav ul li:hover > ul {
+  display: block;
+}
 .filter {
   text-align: center;
   margin: 2em 0;
 }
-
 .burger {
   display: none;
   text-decoration: none;
@@ -223,6 +244,7 @@ nav ul li a:hover {
   /*border-radius: 3px;*/
 }
 .frame img {
+  display: block;
   transition:all .2s ease-in-out;
   -webkit-transition:all .2s ease-in-out;
   -moz-transition:all .2s ease-in-out;
