@@ -212,7 +212,7 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #fe332f;
   color: #fff;
-  /*border-radius: 3px;*/
+  border-radius: 1px;
   transition: background-color 0.3s ease-in-out;
 }
 nav ul ul {
@@ -241,7 +241,7 @@ nav ul li:hover > ul {
   position: relative;
   margin: .5rem;
   overflow: hidden;
-  /*border-radius: 3px;*/
+  border-radius: 1px;
 }
 .frame img {
   display: block;
