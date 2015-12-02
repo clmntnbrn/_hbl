@@ -111,7 +111,7 @@ h3 {
 }
 .footer {
   background-color: #ccc;
-  color: #2D2E67;
+  color: #4F4F4F;
   padding: .5rem;
   margin-top: 3rem;
 }
@@ -139,17 +139,6 @@ h3 {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/*.header-content:after {
-  content: '';
-  background-image: url(../images/fancy_deboss.png);
-  background-repeat: repeat;
-  opacity: 0.5;
-}*/
-/*.header-content a,{
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-}*/
 .header-content.shrink li a {
   font-size:.7rem;
 }
@@ -239,17 +228,18 @@ nav ul li:hover > ul {
 }
 .frame {
   position: relative;
-  margin: .5rem;
+  margin: .7rem;
   overflow: hidden;
-  border-radius: 1px;
 }
 .frame img {
   display: block;
+  margin: 0 auto;
   transition:all .2s ease-in-out;
   -webkit-transition:all .2s ease-in-out;
   -moz-transition:all .2s ease-in-out;
   -ms-transition:all .2s ease-in-out;
   -o-transition:all .2s ease-in-out;
+
 }
 .frame img:hover {
   transform:scale(1.1);
@@ -257,9 +247,6 @@ nav ul li:hover > ul {
   -moz-transform:scale(1.1);
   -ms-transform:scale(1.1);
   -o-transform:scale(1.1);
-}
-.delay {
-  animation-delay: 2s;
 }
 .img-contain {
   text-align: center;
@@ -283,15 +270,7 @@ nav ul li:hover > ul {
     font-size: .7rem;
   }
 }
-@media only screen and (max-width:750px){
-  .container {
-    width:100%;
-  }
-  .grid-third {
-    width: 100%;
-    float:none;
-    margin: 0 auto;
-  }
+@media only screen and (max-width:860px){
   nav ul {
     display: none;
   }
@@ -299,6 +278,16 @@ nav ul li:hover > ul {
     display: block;
     float: right;
     padding: 1.5rem 1rem;
+  }
+}
+@media only screen and (max-width:700px){
+  .container {
+    width:100%;
+  }
+  .grid-third {
+    width: 100%;
+    float:none;
+    margin: 0 auto;
   }
 }
 @media only screen and (max-width:520px){
@@ -310,7 +299,6 @@ nav ul li:hover > ul {
     width:100%;
   }
   .logo {
-    float:none;
     margin:0 auto;
   }
 /*  nav ul {
