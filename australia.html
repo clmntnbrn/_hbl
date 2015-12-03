@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-    	<meta charset="utf-8">
-    	<meta name="description" content="site description goes here">
-    	<meta name="keywords" content="site, keywords, go, here">
+		<meta charset="utf-8">
+		<meta name="description" content="site description goes here">
+		<meta name="keywords" content="site, keywords, go, here">
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 		<title>Heartbreak Launderette</title>
 		<link href='https://fonts.googleapis.com/	css?family=Open+Sans:400,300,600,700' rel='	stylesheet' type='text/css'>
-  	<link href='https://fonts.googleapis.com/	css?family=Abril+Fatface' rel='stylesheet' type='	text/css'>
+		<link href='https://fonts.googleapis.com/	css?family=Abril+Fatface' rel='stylesheet' type='	text/css'>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/animate.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
+		
+		<style>
+			[data-sr] {
+				visibility: hidden;
+			}
+		</style>
 	</head>
 	<body>
 		<!-- HEADER SECTION -->
@@ -28,13 +32,13 @@
 							<ul>
 								<li><a href="index.html">home</a></li>
 								<li><a href="#">europe</a>
-									<ul>
+									<!-- <ul>
 										<li><a href="#">estonia</a></li>
 										<li><a href="#">finland</a></li>
 										<li><a href="#">latvia</a></li>
 										<li><a href="#">lithuania</a></li>
 										<li><a href="#">slovenia</a></li>
-									</ul>
+									</ul> -->
 								</li>
 								<li><a href="#">scandinavia</a></li>
 								<li><a href="#">asia</a></li>
@@ -51,30 +55,49 @@
 			<div class="grid-row clearfix">
 				<div class="grid-column grid-whole">
 					<div class="img-contain">
-						<img data-sr class="gallery" src="images/australia/australia-rainforest-clementine-brown-2001.jpg"/></a>
-						<img data-sr class="gallery" src="images/australia/australia-whitehaven-beach-clementine-brown-2001.jpg"/></a>
-						<img data-sr class="gallery" src="images/australia/australia-canberra-clementine-brown-2001.jpg"/></a>
-						<img data-sr class="gallery" src="images/australia/australia-mission-beach-town-clementine-brown-2001.jpg"/></a>
-						<img data-sr class="gallery" src="images/australia/australia-mission-beach-view-clementine-brown-2001.jpg"/></a>
-						<img data-sr class="gallery" src="images/australia/australia-mission-beach-house-clementine-brown-2001.jpg"/></a>
-						<img data-sr class="gallery" src="images/australia/australia-magnetic-island-track-clementine-brown-2001.jpg"/></a>
-						<img data-sr class="gallery" src="images/australia/australia-magnetic-island-bush-clementine-brown-2001.jpg"/></a>
-						<img data-sr class="gallery" src="images/australia/australia-hidden-beach-clementine-brown-2001.jpg"/></a>
-						<img data-sr class="gallery" src="images/australia/australia-bush-clementine-brown-2001.jpg"/></a>
-						<img data-sr class="gallery" src="images/australia/australia-fraser-island-lake-clementine-brown-2001.jpg"/></a>
-						<img data-sr class="gallery" src="images/australia/australia-west-coast-calm-sea-clementine-brown-2001.jpg"/></a>
-						<img data-sr class="gallery" src="images/australia/australia-blue-mountains-treetops-clementine-brown-2001.jpg"/></a>
+						<img data-sr='ease-in' src="images/australia/australia-rainforest-clementine-brown-2001.jpg"/></a>
+						<img data-sr='ease-in' src="images/australia/australia-whitehaven-beach-clementine-brown-2001.jpg"/></a>
+						<img data-sr='ease-in' src="images/australia/australia-canberra-clementine-brown-2001.jpg"/></a>
+						<img data-sr='ease-in' src="images/australia/australia-mission-beach-town-clementine-brown-2001.jpg"/></a>
+						<img data-sr='ease-in' src="images/australia/australia-mission-beach-view-clementine-brown-2001.jpg"/></a>
+						<img data-sr='ease-in' src="images/australia/australia-mission-beach-house-clementine-brown-2001.jpg"/></a>
+						<img data-sr='ease-in' src="images/australia/australia-magnetic-island-track-clementine-brown-2001.jpg"/></a>
+						<img data-sr='ease-in' src="images/australia/australia-magnetic-island-bush-clementine-brown-2001.jpg"/></a>
+						<img data-sr='ease-in' src="images/australia/australia-hidden-beach-clementine-brown-2001.jpg"/></a>
+						<img data-sr='ease-in' src="images/australia/australia-bush-clementine-brown-2001.jpg"/></a>
+						<img data-sr='ease-in' src="images/australia/australia-fraser-island-lake-clementine-brown-2001.jpg"/></a>
+						<img data-sr='ease-in' src="images/australia/australia-west-coast-calm-sea-clementine-brown-2001.jpg"/></a>
+						<img data-sr='ease-in' src="images/australia/australia-blue-mountains-treetops-clementine-brown-2001.jpg"/></a>
 					</div>
 				</div>
 			</div><!-- CLOSE ROW -->
 		</div><!-- CLOSE CONTAINER -->
-		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="js/main.js"></script>
 		<script src='js/scrollReveal.js'></script>
-    <script>
-
-      window.sr = new scrollReveal();
-
-    </script>
+		<script>
+			var config = {
+					easing: 'ease-in',
+					reset:  true,
+					delay:  'onload',
+					vFactor: 0.10
+			}
+			window.sr = new scrollReveal();
+		</script>
+		<script src='js/jquery.scrollUp.js'></script>
+		<script>
+			$(function () {
+				$.scrollUp({
+					scrollName: 'scrollUp', // Element ID
+					topDistance: '300', // Distance from top before showing element (px)
+					topSpeed: 300, // Speed back to top (ms)
+					animation: 'fade', // Fade, slide, none
+					animationInSpeed: 200, // Animation in speed (ms)
+					animationOutSpeed: 200, // Animation out speed (ms)
+					scrollText: '⌃', // Text for element
+					activeOverlay: false, // Set CSS color to display scrollUp active point, e.			g '#00FFFF'
+				});
+			});
+		</script>
 	</body>
 </html>

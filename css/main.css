@@ -10,8 +10,9 @@ Author: Clementine Brown
 
 /* 
 
-color: #4F4F4F
+color: #4C5664
 hover: #fe332f
+nav hover & footer color: #869CA3;
 
  */
 
@@ -49,7 +50,7 @@ img {
 
 html {
   font-size: 16px;
-  color: #4F4F4F;
+  color: #4C5664;
 }
 
 /******************************************
@@ -73,6 +74,9 @@ h3 {
   font-weight: 400;
   font-style: italic;
   padding-left: .5rem;
+}
+a {
+  text-decoration: none;
 }
 
 /
@@ -110,17 +114,20 @@ h3 {
   margin-top: 5rem;
 }
 .footer {
-  background-color: #ccc;
-  color: #4F4F4F;
+  background-color: #4C5664;
+  color: #fff;
   padding: .5rem;
-  margin-top: 3rem;
+  /*margin-top: 3rem;*/
 }
 .footer a {
   text-decoration: none;
-  color: #4F4F4F;
+  color: #fff;
 }
 .footer a:hover {
   color: #fe332f;
+}
+.footer p {
+    font-size: .7rem;
 }
 /******************************************
 /* HEADER                   
@@ -132,7 +139,7 @@ h3 {
   background-color: rgba(255,255,255, .8);
   width: 100%;
   z-index: 1;
-  border-bottom: 1px solid rgba(0,0,0, .1);
+  border-bottom: 1px solid rgba(134, 156, 163, .3);
 }
 .header-content * {
   -webkit-transition: all 0.3s ease-in-out;
@@ -173,7 +180,7 @@ h3 {
 }
 .logo a {
   text-decoration: none;
-  color: #4F4F4F;
+  color: #4C5664;
 }
 .logo a:hover {
   color: #fe332f;
@@ -184,7 +191,7 @@ nav ul {
 }
 nav ul li {
   position: relative;
-  display: inline;
+  display: inline-block;
   margin-right: 2rem;
 }
 nav ul li:last-child {
@@ -192,17 +199,18 @@ nav ul li:last-child {
 }
 nav ul li a {
   text-decoration: none;
-  color: #4F4F4F;
+  color: #4C5664;
   font-family: 'Open Sans';
   font-weight: 100;
   font-size: 0.9rem;
   padding: .5rem;
 }
 nav ul li a:hover {
-  background-color: #fe332f;
+  background-color: rgba(134, 156, 163, 1);
   color: #fff;
   border-radius: 1px;
-  transition: background-color 0.3s ease-in-out;
+  /*border: 1px solid rgba(134, 156, 163, 1);*/
+  transition: background-color 0.2s ease-in-out;
 }
 nav ul ul {
   display: none;
@@ -214,9 +222,9 @@ nav ul ul {
 nav ul ul li {
   margin: .8rem;
 }
-nav ul li:hover > ul {
+/*nav ul li:hover > ul {
   display: block;
-}
+}*/
 .filter {
   text-align: center;
   margin: 2em 0;
@@ -224,7 +232,7 @@ nav ul li:hover > ul {
 .burger {
   display: none;
   text-decoration: none;
-  color: #4F4F4F;
+  color: #4C5664;
 }
 .frame {
   position: relative;
@@ -249,16 +257,33 @@ nav ul li:hover > ul {
   -o-transform:scale(1.1);
 }
 .img-contain {
-  text-align: center;
+  margin: 0 auto;
+  max-width: 80%;
 }
-.gallery {
-  max-width: 70%;
+.img-contain img {
   margin-bottom: 3rem;
+}
+#scrollUp {
+  height: 40px;
+  width: 40px;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  border-radius: 50%;
+  background: #555;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+  padding: 0.2rem .3rem 0 .46rem;
 }
 /******************************************
 /* RESPONSIVE LAYOUT                   
 /*******************************************/
 @media only screen and (max-width:980px){
+  html {
+  font-size: 12px;
+  }
   .container {
     width:100%;
   }
@@ -266,34 +291,44 @@ nav ul li:hover > ul {
     width:50%;
     margin: 0 auto;
   }
-  nav ul li a {
+/*  nav ul li a {
     font-size: .7rem;
-  }
+  }*/
+  .img-contain {
+  max-width: 90%;
 }
 @media only screen and (max-width:860px){
   nav ul {
     display: none;
+    margin-top: 4rem;
+    width: 100%;
+    text-align: center;
+  }
+  nav ul li {
+    display: block;
+    font-size: 1.5rem;
+    width: 100%;
+    line-height: 3rem;
+    border-bottom: 1px solid #869CA3;
   }
   .burger {
     display: block;
     float: right;
     padding: 1.5rem 1rem;
+    font-size: 1.5rem;
+  }
+  #scrollUp {
+    display: none;
   }
 }
 @media only screen and (max-width:700px){
-  .container {
-    width:100%;
-  }
-  .grid-third {
+  .grid-column {
     width: 100%;
     float:none;
     margin: 0 auto;
   }
 }
 @media only screen and (max-width:520px){
-  .container {
-    width:100%;
-  }
   .grid-column {
     float:none;
     width:100%;
@@ -301,6 +336,9 @@ nav ul li:hover > ul {
   .logo {
     margin:0 auto;
   }
+  /*.frame {
+    width: 70%;
+  }*/
 /*  nav ul {
     display: none;
   }*/
