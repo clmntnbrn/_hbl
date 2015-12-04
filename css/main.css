@@ -110,6 +110,9 @@ a {
   margin: 6rem auto;
 /*    background-color: #EDEDED;*/
 }
+.remove-margin {
+  margin-top: 1rem;
+}
 .main-content {
   margin-top: 5rem;
 }
@@ -154,7 +157,7 @@ a {
   margin-left: .3rem;
 }
 .header-content.shrink .logo {
-    margin: .2rem;
+    margin: .7rem;
 }
 .header-content.shrink nav ul {
   margin: .8rem 0;
@@ -169,6 +172,40 @@ a {
   max-width: 1210px;
   margin: 0 auto;
 }
+.slide-down {
+  display: none;
+  overflow: hidden;
+  background-color: rgba(134, 156, 163, .1);
+  border-bottom: 1px solid rgba(134, 156, 163, 1);
+}
+.drop {
+  margin-top: 5rem;
+  margin-bottom: 9rem;
+}
+.drop ul {
+  float: right;
+}
+.drop ul li {
+  display: inline-block;
+}
+.drop ul li a {
+  text-decoration: none;
+  color: #4C5664;
+  font-family: 'Open Sans';
+  font-weight: 100;
+  font-size: 0.9rem;
+  padding: .5rem 2rem 1rem .5rem;
+  text-align: center;
+}
+
+.primary-nav ul li .drop {
+  display: none;
+  position: absolute;
+  z-index: 2;
+}
+.primary-nav ul li.active .drop {
+  display: block;
+}
 
 /******************************************
 /* ADDITIONAL STYLES                   
@@ -176,7 +213,7 @@ a {
 
 .logo {
   float: left;
-  margin: .5rem;
+  margin: 1.3rem .7rem;
 }
 .logo a {
   text-decoration: none;
@@ -224,9 +261,6 @@ nav ul ul {
 nav ul ul li {
   margin: .8rem;
 }
-/*nav ul li:hover > ul {
-  display: block;
-}*/
 .filter {
   text-align: center;
   margin: 2em 0;
@@ -249,7 +283,6 @@ nav ul ul li {
   -moz-transition:all .2s ease-in-out;
   -ms-transition:all .2s ease-in-out;
   -o-transition:all .2s ease-in-out;
-
 }
 .frame img:hover {
   transform:scale(1.1);
