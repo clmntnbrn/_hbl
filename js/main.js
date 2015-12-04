@@ -49,7 +49,7 @@ $(document).ready(function(){
   //       $(this).removeClass('active');
       
   //       // slide the mega nav up
-  //       $('.slide-down').slideUp();
+  //       $('.sub-nav').slideUp();
   //     }
   //     else {
   //       // remove the active class previous nav item
@@ -65,7 +65,7 @@ $(document).ready(function(){
   //       $(target).show();
   
   //       // the mega nav slides down
-  //       $('.slide-down').slideDown();
+  //       $('.sub-nav').slideDown();
   //     }
   // });
 
@@ -81,7 +81,7 @@ $(document).ready(function(){
       $('.primary-nav .asia').removeClass('active');
     
       // slide the mega nav up
-      $('.slide-down').slideUp();
+      $('.sub-nav').slideUp();
     }
     else {
       // remove the active class previous nav item
@@ -94,10 +94,10 @@ $(document).ready(function(){
       $('.drop').hide();
   
       // show the asia section
-      $('.slide-down .asia').show();
+      $('.sub-nav .asia').show();
   
       // the mega nav slides down
-      $('.slide-down').slideDown();
+      $('.sub-nav').slideDown();
     }
   });
   //australasia
@@ -108,7 +108,7 @@ $(document).ready(function(){
 
       $('.primary-nav .australasia').removeClass('active');
 
-      $('.slide-down').slideUp();
+      $('.sub-nav').slideUp();
     }
     else {
       $('.primary-nav li').removeClass('active');
@@ -117,9 +117,9 @@ $(document).ready(function(){
 
       $('.drop').hide();
 
-      $('.slide-down .australasia').show();
+      $('.sub-nav .australasia').show();
 
-      $('.slide-down').slideDown();
+      $('.sub-nav').slideDown();
     }
   });
   //americas
@@ -130,7 +130,7 @@ $(document).ready(function(){
 
       $('.primary-nav .americas').removeClass('active');
 
-      $('.slide-down').slideUp();
+      $('.sub-nav').slideUp();
     }
     else {
       $('.primary-nav li').removeClass('active');
@@ -139,9 +139,9 @@ $(document).ready(function(){
 
       $('.drop').hide();
 
-      $('.slide-down .americas').show();
+      $('.sub-nav .americas').show();
 
-      $('.slide-down').slideDown();
+      $('.sub-nav').slideDown();
     }
   });
   //europe
@@ -152,7 +152,7 @@ $(document).ready(function(){
 
       $('.primary-nav .europe').removeClass('active');
 
-      $('.slide-down').slideUp();
+      $('.sub-nav').slideUp();
     }
     else {
       $('.primary-nav li').removeClass('active');
@@ -161,9 +161,9 @@ $(document).ready(function(){
 
       $('.drop').hide();
 
-      $('.slide-down .europe').show();
+      $('.sub-nav .europe').show();
 
-      $('.slide-down').slideDown();
+      $('.sub-nav').slideDown();
     }
   });
   //scandinavia
@@ -174,7 +174,7 @@ $(document).ready(function(){
 
       $('.primary-nav .scandinavia').removeClass('active');
 
-      $('.slide-down').slideUp();
+      $('.sub-nav').slideUp();
     }
     else {
       $('.primary-nav li').removeClass('active');
@@ -183,9 +183,9 @@ $(document).ready(function(){
 
       $('.drop').hide();
 
-      $('.slide-down .scandinavia').show();
+      $('.sub-nav .scandinavia').show();
 
-      $('.slide-down').slideDown();
+      $('.sub-nav').slideDown();
     }
   });
   //home
@@ -196,7 +196,17 @@ $(document).ready(function(){
 
     $('.primary-nav').removeClass('active');
 
-    $('.slide-down').slideUp();
+    $('.sub-nav').slideUp();
+  });
+  //logo
+  $('.logo').on('click', function(event){
+    event.preventDefault();
+
+    $('.primary-nav').hasClass('active');
+
+    $('.primary-nav').removeClass('active');
+
+    $('.sub-nav').slideUp();
   });
 
   //remove margin
