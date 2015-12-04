@@ -188,26 +188,6 @@ $(document).ready(function(){
       $('.sub-nav').slideDown();
     }
   });
-  //home
-  $('.primary-nav .home').on('click', function(event){
-    event.preventDefault();
-
-    $('.primary-nav').hasClass('active');
-
-    $('.primary-nav').removeClass('active');
-
-    $('.sub-nav').slideUp();
-  });
-  //logo
-  $('.logo').on('click', function(event){
-    event.preventDefault();
-
-    $('.primary-nav').hasClass('active');
-
-    $('.primary-nav').removeClass('active');
-
-    $('.sub-nav').slideUp();
-  });
 
   //remove margin
   $('.container').on('load', function(){
