@@ -204,13 +204,15 @@ nav ul li a {
   font-weight: 100;
   font-size: 0.9rem;
   padding: .5rem;
+  background-color: rgba(134, 156, 163, 0);
+  border: 1px solid rgba(134, 156, 163, 0);
+  border-radius: 4px;
 }
 nav ul li a:hover {
-  background-color: rgba(134, 156, 163, 1);
-  color: #fff;
-  border-radius: 1px;
-  /*border: 1px solid rgba(134, 156, 163, 1);*/
-  transition: background-color 0.2s ease-in-out;
+  background-color: rgba(134, 156, 163, .1);
+  border: 1px solid rgba(134, 156, 163, 1);
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
 }
 nav ul ul {
   display: none;
