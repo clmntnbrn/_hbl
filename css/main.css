@@ -11,7 +11,7 @@ Author: Clementine Brown
 /* 
 
 color: #4C5664
-hover: #fe332f
+hover orange: #fe332f
 nav hover & footer color: #869CA3;
 
  */
@@ -200,16 +200,16 @@ a {
   font-weight: 100;
   font-size: 0.9rem;
   padding: .5rem;
+  background-color: rgba(134, 156, 163, 0);
+  border: 1px solid rgba(134, 156, 163, 0);
+  border-radius: 4px;
 }
-/*
-.primary-nav ul li .drop {
-  display: none;
-  position: absolute;
-  z-index: 2;
+.drop ul li a:hover {
+  background-color: rgba(134, 156, 163, .1);
+  border: 1px solid rgba(134, 156, 163, 1);
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
 }
-.primary-nav ul li.active .drop {
-  display: block;
-}*/
 
 /******************************************
 /* ADDITIONAL STYLES                   
@@ -309,12 +309,20 @@ nav ul ul li {
   right: 20px;
   padding: 10px 20px;
   border-radius: 50%;
-  background: #555;
+  background-color: rgba(134, 156, 163, 1);
   color: #fff;
   font-family: 'Open Sans', sans-serif;
   font-weight: 100;
   font-size: 2rem;
   padding: 0.2rem .3rem 0 .46rem;
+  transition:all .2s ease-in-out;
+  -webkit-transition:all .2s ease-in-out;
+  -moz-transition:all .2s ease-in-out;
+  -ms-transition:all .2s ease-in-out;
+  -o-transition:all .2s ease-in-out;
+}
+#scrollUp:hover {
+  background-color: rgba(76, 86, 100, 1);
 }
 /******************************************
 /* RESPONSIVE LAYOUT                   

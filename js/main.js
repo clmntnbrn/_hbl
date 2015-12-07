@@ -43,20 +43,20 @@ $(document).ready(function(){
   //     console.log(target);
 
   //     // if I click international again then
-  //     if ( $(this).hasClass('active') ) {
+  //     if ( $(this).hasClass('display') ) {
 
-  //       // remove the active class
-  //       $(this).removeClass('active');
+  //       // remove the display class
+  //       $(this).removeClass('display');
       
   //       // slide the mega nav up
   //       $('.sub-nav').slideUp();
   //     }
   //     else {
-  //       // remove the active class previous nav item
-  //       $('.primary-nav li').removeClass('active')
+  //       // remove the display class previous nav item
+  //       $('.primary-nav li').removeClass('display')
 
-  //       // add an active class to the item
-  //       $(this).addClass('active');
+  //       // add an display class to the item
+  //       $(this).addClass('display');
   
   //       // hide all the sections
   //       $('.drop').hide();
@@ -75,20 +75,20 @@ $(document).ready(function(){
     event.preventDefault();
 
     // if I click asia again then
-    if ( $('.primary-nav .asia').hasClass('active') ) {
+    if ( $('.primary-nav .asia').hasClass('display') ) {
 
-      // remove the active class
-      $('.primary-nav .asia').removeClass('active');
+      // remove the display class
+      $('.primary-nav .asia').removeClass('display');
     
       // slide the mega nav up
       $('.sub-nav').slideUp();
     }
     else {
-      // remove the active class previous nav item
-      $('.primary-nav li').removeClass('active');
+      // remove the display class previous nav item
+      $('.primary-nav li').removeClass('display');
 
-      // add an active class to the item
-      $('.primary-nav .asia').addClass('active');
+      // add an display class to the item
+      $('.primary-nav .asia').addClass('display');
   
       // hide all the sections
       $('.drop').hide();
@@ -104,16 +104,16 @@ $(document).ready(function(){
   $('.primary-nav .australasia').on('click', function(event){
     event.preventDefault();
 
-    if ( $('.primary-nav .australasia').hasClass('active') ) {
+    if ( $('.primary-nav .australasia').hasClass('display') ) {
 
-      $('.primary-nav .australasia').removeClass('active');
+      $('.primary-nav .australasia').removeClass('display');
 
       $('.sub-nav').slideUp();
     }
     else {
-      $('.primary-nav li').removeClass('active');
+      $('.primary-nav li').removeClass('display');
 
-      $('.primary-nav .australasia').addClass('active');
+      $('.primary-nav .australasia').addClass('display');
 
       $('.drop').hide();
 
@@ -126,16 +126,16 @@ $(document).ready(function(){
   $('.primary-nav .americas').on('click', function(event){
     event.preventDefault();
 
-    if ( $('.primary-nav .americas').hasClass('active') ) {
+    if ( $('.primary-nav .americas').hasClass('display') ) {
 
-      $('.primary-nav .americas').removeClass('active');
+      $('.primary-nav .americas').removeClass('display');
 
       $('.sub-nav').slideUp();
     }
     else {
-      $('.primary-nav li').removeClass('active');
+      $('.primary-nav li').removeClass('display');
 
-      $('.primary-nav .americas').addClass('active');
+      $('.primary-nav .americas').addClass('display');
 
       $('.drop').hide();
 
@@ -148,16 +148,16 @@ $(document).ready(function(){
   $('.primary-nav .europe').on('click', function(event){
     event.preventDefault();
 
-    if ( $('.primary-nav .europe').hasClass('active') ) {
+    if ( $('.primary-nav .europe').hasClass('display') ) {
 
-      $('.primary-nav .europe').removeClass('active');
+      $('.primary-nav .europe').removeClass('display');
 
       $('.sub-nav').slideUp();
     }
     else {
-      $('.primary-nav li').removeClass('active');
+      $('.primary-nav li').removeClass('display');
 
-      $('.primary-nav .europe').addClass('active');
+      $('.primary-nav .europe').addClass('display');
 
       $('.drop').hide();
 
@@ -170,16 +170,16 @@ $(document).ready(function(){
   $('.primary-nav .scandinavia').on('click', function(event){
     event.preventDefault();
 
-    if ( $('.primary-nav .scandinavia').hasClass('active') ) {
+    if ( $('.primary-nav .scandinavia').hasClass('display') ) {
 
-      $('.primary-nav .scandinavia').removeClass('active');
+      $('.primary-nav .scandinavia').removeClass('display');
 
       $('.sub-nav').slideUp();
     }
     else {
-      $('.primary-nav li').removeClass('active');
+      $('.primary-nav li').removeClass('display');
 
-      $('.primary-nav .scandinavia').addClass('active');
+      $('.primary-nav .scandinavia').addClass('display');
 
       $('.drop').hide();
 
@@ -188,31 +188,11 @@ $(document).ready(function(){
       $('.sub-nav').slideDown();
     }
   });
-  //home
-  $('.primary-nav .home').on('click', function(event){
-    event.preventDefault();
-
-    $('.primary-nav').hasClass('active');
-
-    $('.primary-nav').removeClass('active');
-
-    $('.sub-nav').slideUp();
-  });
-  //logo
-  $('.logo').on('click', function(event){
-    event.preventDefault();
-
-    $('.primary-nav').hasClass('active');
-
-    $('.primary-nav').removeClass('active');
-
-    $('.sub-nav').slideUp();
-  });
 
   //remove margin
   $('.container').on('load', function(){
 
-    if ( $('.primary-nav').hasClass('active') ) {
+    if ( $('.primary-nav').hasClass('display') ) {
       $('.container').addClass('remove-margin');
     }
     else {
