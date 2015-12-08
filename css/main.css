@@ -10,9 +10,9 @@ Author: Clementine Brown
 
 /* 
 
-color: #4C5664
 hover orange: #fe332f
-nav hover & footer color: #869CA3;
+color & footer color: #869CA3;
+footer hover color: #E3D6C5;
 
  */
 
@@ -67,12 +67,15 @@ h1 {
   font-size: 4rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
-  color: #ffffff;
+  letter-spacing: .2rem;
+  color: #fff;
   text-shadow: 2px 0px 0px rgba(76, 86, 100, 0.5);
+  text-transform: uppercase;
 }
 h2 {
-  color: #ffffff;
-  font-size: 3rem;
+  letter-spacing: .1rem;
+  color: #fff;
+  font-size: 2.5rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   text-shadow: 1px 0px 0px rgba(76, 86, 100, 0.5);
@@ -109,7 +112,13 @@ a {
 
 .container {
   max-width: 1210px;
+  margin: 7rem auto;
+  position: relative;
+}
+.container-home {
+  max-width: 1210px;
   margin: 2rem auto;
+  position: relative;
 }
 /*.remove-margin {
   margin-top: 1rem;
@@ -118,17 +127,16 @@ a {
   background-color: #4C5664;
   color: #fff;
   padding: .5rem;
-  /*margin-top: 3rem;*/
 }
 .footer a {
   text-decoration: none;
   color: #fff;
 }
 .footer a:hover {
-  color: #fe332f;
+  color: #E3D6C5;
 }
 .footer p {
-    font-size: .7rem;
+    font-size: 1rem;
 }
 /******************************************
 /* HEADER                   
@@ -149,17 +157,14 @@ a {
 }
 .header-content.shrink li a {
   font-size: .8rem;
-  padding: .3rem .5rem;
+  padding: .4rem .5rem;
 }
 .header-content.shrink h1 {
   font-size:1rem;
   margin-left: .3rem;
 }
-.header-content.shrink .logo {
-    margin: .7rem;
-}
 .header-content.shrink nav ul {
-  margin: .8rem 0;
+  margin: 1.2rem 0;
 }
 .header-content.shrink ul li {
   margin-right: 1.5rem
@@ -176,28 +181,27 @@ a {
 /* DROPDOWN                  
 /*******************************************/
 
-.sub-nav {
+/*.sub-nav {
   display: none;
   overflow: hidden;
   background-color: rgba(134, 156, 163, .1);
   border-bottom: 1px solid rgba(134, 156, 163, 1);
-}
-.drop {
+}*/
+/*.drop {
   margin-top: 5rem;
   margin-bottom: 5rem;
-  /*max-width: 1210px;*/
-}
-.drop ul {
+}*/
+/*.drop ul {
   float: right;
-}
-.drop ul li {
+}*/
+/*.drop ul li {
   display: inline-block;
   margin: .5rem 2rem 1rem .5rem;
-}
-.drop ul li:last-child {
+}*/
+/*.drop ul li:last-child {
   margin-right: 0;
-}
-.drop ul li a {
+}*/
+/*.drop ul li a {
   text-decoration: none;
   color: #4C5664;
   font-family: 'Open Sans';
@@ -207,14 +211,23 @@ a {
   background-color: rgba(134, 156, 163, 0);
   border: 1px solid rgba(134, 156, 163, 0);
   border-radius: 4px;
-}
-.drop ul li a:hover {
+}*/
+/*.drop ul li a:hover {
   background-color: rgba(134, 156, 163, .1);
   border: 1px solid rgba(134, 156, 163, 1);
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
-}
-
+}*/
+/*nav ul ul {
+  display: none;
+  background-color: rgba(255,255,255, .8);
+  top:100%;
+  left:0;
+  position: absolute;
+}*/
+/*nav ul ul li {
+  margin: .8rem;
+}*/
 /******************************************
 /* ADDITIONAL STYLES                   
 /*******************************************/
@@ -225,28 +238,23 @@ a {
   position: relative;
   margin-top: 0;
 }
+.parallax-window-small {
+  min-height: 400px;
+  background: transparent;
+  position: relative;
+  margin-top: 0;
+}
 .text {
   position: absolute;
-  margin: 12rem auto;
+  margin: 17rem auto;
   text-align: center;
-  letter-spacing: .3rem;
+  
 }
-/*.logo {
-  float: left;
-  margin: 1.3rem .7rem;
-}
-.logo a {
-  text-decoration: none;
-  color: #4C5664;
-}
-.logo a:hover {
-  color: #fe332f;
-}*/
 .site-nav {
   text-align: center;
 }
 nav ul {
-  margin: 1.5rem auto;
+  margin: 2rem auto;
 }
 nav ul li {
   position: relative;
@@ -260,28 +268,14 @@ nav ul li a {
   text-decoration: none;
   color: #4C5664;
   font-family: 'Open Sans';
-  font-weight: 100;
+  font-weight: 400;
   font-size: 0.9rem;
   padding: .5rem;
-  background-color: rgba(134, 156, 163, 0);
-  border: 1px solid rgba(134, 156, 163, 0);
-  border-radius: 4px;
+  border: 2px solid rgba(78, 86, 100, 0);
 }
 nav ul li a:hover {
-  background-color: rgba(134, 156, 163, .1);
-  border: 1px solid rgba(134, 156, 163, 1);
-  border-radius: 4px;
-  transition: all 0.2s ease-in-out;
-}
-nav ul ul {
-  display: none;
-  background-color: rgba(255,255,255, .8);
-  top:100%;
-  left:0;
-  position: absolute;
-}
-nav ul ul li {
-  margin: .8rem;
+  border: 2px solid rgba(78, 86, 100, 1);
+  transition: all 0.4s ease-in-out;
 }
 .filter {
   text-align: center;
@@ -315,24 +309,25 @@ nav ul ul li {
 }
 .img-contain {
   margin: 0 auto;
-  max-width: 80%;
+  width: 90%;
 }
 .img-contain img {
   margin-bottom: 3rem;
+  width: 100%;
 }
 #scrollUp {
-  height: 40px;
-  width: 40px;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 20px;
+  height: 2.5rem;
+  width: 2.5rem;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  padding: .2rem .4rem;
   border-radius: 50%;
-  background-color: rgba(134, 156, 163, 1);
-  color: #fff;
+  border: 2px solid rgba(78, 86, 100, 1);
+  background-color: rgba(78, 86, 100, 0);
+  color: rgba(78, 86, 100, 1);
   font-family: 'Open Sans', sans-serif;
   font-weight: 100;
-  font-size: 2rem;
-  padding: 0.2rem .3rem 0 .46rem;
+  font-size: 1.75rem;
   transition:all .2s ease-in-out;
   -webkit-transition:all .2s ease-in-out;
   -moz-transition:all .2s ease-in-out;
@@ -341,16 +336,14 @@ nav ul ul li {
 }
 #scrollUp:hover {
   background-color: rgba(76, 86, 100, 1);
+  color: #fff;
 }
 /******************************************
 /* RESPONSIVE LAYOUT                   
 /*******************************************/
 @media only screen and (max-width:1210px) {
   h1 {
-    font-size: 3rem;
-  }
-  h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 @media only screen and (max-width:980px){
@@ -364,9 +357,6 @@ nav ul ul li {
     width:50%;
     margin: 0 auto;
   }
-/*  nav ul li a {
-    font-size: .7rem;
-  }*/
   .img-contain {
   max-width: 90%;
 }
@@ -400,6 +390,9 @@ nav ul ul li {
     float:none;
     margin: 0 auto;
   }
+  #scrollUp {
+    display: none;
+  }
 }
 @media only screen and (max-width:520px){
   .grid-column {
@@ -409,10 +402,4 @@ nav ul ul li {
   .logo {
     margin:0 auto;
   }
-  /*.frame {
-    width: 70%;
-  }*/
-/*  nav ul {
-    display: none;
-  }*/
 }
