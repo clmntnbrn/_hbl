@@ -64,16 +64,18 @@ p {
   padding: 0 1rem .2rem 1rem;
 }
 h1 {
-  font-size: 1.2rem;
-  font-family: 'Abril Fatface';
-  font-weight: 700;
+  font-size: 4rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  color: #ffffff;
+  text-shadow: 2px 0px 0px rgba(76, 86, 100, 0.5);
 }
-h3 {
-  font-size: 1.2rem;
-  font-family: 'Abril Fatface';
+h2 {
+  color: #ffffff;
+  font-size: 3rem;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-style: italic;
-  padding-left: .5rem;
+  text-shadow: 1px 0px 0px rgba(76, 86, 100, 0.5);
 }
 a {
   text-decoration: none;
@@ -107,15 +109,11 @@ a {
 
 .container {
   max-width: 1210px;
-  margin: 6rem auto;
-/*    background-color: #EDEDED;*/
+  margin: 2rem auto;
 }
-.remove-margin {
+/*.remove-margin {
   margin-top: 1rem;
-}
-.main-content {
-  margin-top: 5rem;
-}
+}*/
 .footer {
   background-color: #4C5664;
   color: #fff;
@@ -173,6 +171,11 @@ a {
   max-width: 1210px;
   margin: 0 auto;
 }
+
+/******************************************
+/* DROPDOWN                  
+/*******************************************/
+
 .sub-nav {
   display: none;
   overflow: hidden;
@@ -216,7 +219,19 @@ a {
 /* ADDITIONAL STYLES                   
 /*******************************************/
 
-.logo {
+.parallax-window {
+  min-height: 800px;
+  background: transparent;
+  position: relative;
+  margin-top: 0;
+}
+.text {
+  position: absolute;
+  margin: 12rem auto;
+  text-align: center;
+  letter-spacing: .3rem;
+}
+/*.logo {
   float: left;
   margin: 1.3rem .7rem;
 }
@@ -226,10 +241,12 @@ a {
 }
 .logo a:hover {
   color: #fe332f;
+}*/
+.site-nav {
+  text-align: center;
 }
 nav ul {
-  float: right;
-  margin: 1.5rem 0;
+  margin: 1.5rem auto;
 }
 nav ul li {
   position: relative;
@@ -328,6 +345,14 @@ nav ul ul li {
 /******************************************
 /* RESPONSIVE LAYOUT                   
 /*******************************************/
+@media only screen and (max-width:1210px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
 @media only screen and (max-width:980px){
   html {
   font-size: 12px;
