@@ -151,6 +151,7 @@ a {
 }
 .header-content.shrink li a {
   font-size: .8rem;
+  padding: .3rem .5rem;
 }
 .header-content.shrink h1 {
   font-size:1rem;
