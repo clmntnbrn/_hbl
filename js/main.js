@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     //shrink header
     $(function(){
-      var shrinkHeader = 200;
+      var shrinkHeader = 800;
       $(window).scroll(function() {
         var scroll = getCurrentScroll();
           if ( scroll >= shrinkHeader ) {
@@ -190,15 +190,15 @@ $(document).ready(function(){
   });
 
   //remove margin
-  $('.container').on('load', function(){
+  // $('.container').on('load', function(){
 
-    if ( $('.primary-nav').hasClass('display') ) {
-      $('.container').addClass('remove-margin');
-    }
-    else {
-      $('.container').removeClass('remove-margin');
-    }
-  });
+  //   if ( $('.primary-nav').hasClass('display') ) {
+  //     $('.container').addClass('remove-margin');
+  //   }
+  //   else {
+  //     $('.container').removeClass('remove-margin');
+  //   }
+  // });
 });
 
 
