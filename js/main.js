@@ -34,6 +34,19 @@ $(document).ready(function(){
       }
     });
 
+
+    //filter
+    // $('.sort').click(function(event) {
+    //   event.preventDefault();
+    //   $('.mix').hide()
+    //   $('.mix').removeClass('display-image')
+    //   if ($(this).attr('id') === 'asia') {
+    //     $('.asia').show();
+    //     $('.mix').addClass('display-image')
+    //   }
+    // });
+
+
     //dropdown
   //   // when I click on the international list item
   //   $('.primary-nav li').on('click', function(event){
