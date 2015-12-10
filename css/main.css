@@ -246,7 +246,7 @@ nav ul li a:hover {
 
 .frame {
   position: relative;
-  margin: .7rem;
+  margin: .9rem;
   overflow: hidden;
 }
 .frame img {
@@ -350,6 +350,7 @@ nav ul li a:hover {
     margin-top: 4rem;
     width: 100%;
     text-align: center;
+    padding: 0;
   }
   nav ul li {
     display: block;
@@ -358,10 +359,13 @@ nav ul li a:hover {
     line-height: 3rem;
     border-bottom: 1px solid #869CA3;
   }
+  nav ul li a:hover {
+    border: none;
+  }
   .burger {
     display: block;
     float: right;
-    padding: 1.5rem 1rem;
+    padding: 1rem;
     font-size: 1.5rem;
   }
   #scrollUp {
