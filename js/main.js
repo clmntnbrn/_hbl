@@ -1,50 +1,48 @@
 $(document).ready(function(){
 
-    //shrink header
-    $(function(){
-      var shrinkHeader = 800;
-      $(window).scroll(function() {
-        var scroll = getCurrentScroll();
-          if ( scroll >= shrinkHeader ) {
-            $('.header-content').addClass('shrink');
-          }
-          else {
-            $('.header-content').removeClass('shrink');
-          }
+  //shrink header
+  $(function(){
+    var shrinkHeader = 800;
+    $(window).scroll(function() {
+      var scroll = getCurrentScroll();
+        if ( scroll >= shrinkHeader ) {
+          $('.header-content').addClass('shrink');
+        }
+        else {
+          $('.header-content').removeClass('shrink');
+        }
     });
-    
-    function getCurrentScroll() {
-      return window.pageYOffset || document.documentElement.scrollTop;
-      }
-    });
-    
-    //responsive nav
-    $('.burger').on('click', function(event){
-        event.preventDefault();
-        $('.site-nav ul').slideToggle();
-    });
-    $(window).on('resize', function(){
-      if ($(window).width() > 860) {
-        $('.site-nav ul').show();
-        $('.nav-icon').hide();
-      }
-      else {
-        $('.site-nav ul').hide();
-        $('.nav-icon').show();
-      }
-    });
+  function getCurrentScroll() {
+    return window.pageYOffset || document.documentElement.scrollTop;
+    }
+  });
+  
+  //responsive nav
+  $('.burger').on('click', function(event){
+      event.preventDefault();
+      $('.site-nav ul').slideToggle();
+  });
+  $(window).on('resize', function(){
+    if ($(window).width() > 860) {
+      $('.site-nav ul').show();
+      $('.nav-icon').hide();
+    }
+    else {
+      $('.site-nav ul').hide();
+      $('.nav-icon').show();
+    }
+  });
 
-
-    //filter
-    // $('.sort').click(function(event) {
-    //   event.preventDefault();
-    //   $('.mix').hide()
-    //   $('.mix').removeClass('display-image')
-    //   if ($(this).attr('id') === 'asia') {
-    //     $('.asia').show();
-    //     $('.mix').addClass('display-image')
-    //   }
-    // });
+  //filter
+  // $('.sort').click(function(event) {
+  //   event.preventDefault();
+  //   $('.mix').hide()
+  //   $('.mix').removeClass('display-image')
+  //   if ($(this).attr('id') === 'asia') {
+  //     $('.asia').show();
+  //     $('.mix').addClass('display-image')
+  //   }
+  // });
 
 
     //dropdown

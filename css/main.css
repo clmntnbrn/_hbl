@@ -345,26 +345,25 @@ nav ul li a:hover {
   max-width: 90%;
 }
 @media only screen and (max-width:860px){
+  .site-nav {
+    text-align: left;
+  }
   nav ul {
     display: none;
-    margin-top: 4rem;
     width: 100%;
-    text-align: center;
-    padding: 0;
+    float: left;
+    padding: 0 1rem;
+    margin: 0.5rem 0;
   }
   nav ul li {
     display: block;
     font-size: 1.5rem;
     width: 100%;
     line-height: 3rem;
-    border-bottom: 1px solid #869CA3;
-  }
-  nav ul li a:hover {
-    border: none;
   }
   .burger {
     display: block;
-    float: right;
+    float: left;
     padding: 1rem;
     font-size: 1.5rem;
   }
