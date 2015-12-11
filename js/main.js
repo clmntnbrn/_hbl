@@ -20,7 +20,7 @@ $(document).ready(function(){
   //responsive nav
   $('.burger').on('click', function(event){
       event.preventDefault();
-      $('.site-nav ul').slideToggle();
+      $('.site-nav ul').slideToggle('easeInOut');
   });
   $(window).on('resize', function(){
     if ($(window).width() > 860) {

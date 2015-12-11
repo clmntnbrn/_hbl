@@ -145,7 +145,7 @@ a {
   background-color: rgba(255,255,255, .8);
   width: 100%;
   z-index: 1;
-  border-bottom: 1px solid rgba(134, 156, 163, .3);
+  border-bottom: 2px solid rgba(134,156,163,.1);
 }
 .header-content * {
   -webkit-transition: all 0.3s ease-in-out;
@@ -209,7 +209,7 @@ a {
 nav ul {
   margin: 2rem auto;
 }
-nav ul li {
+nav ul li, .breadcrumbs ul li {
   position: relative;
   display: inline-block;
   margin-right: 2rem;
@@ -217,7 +217,7 @@ nav ul li {
 nav ul li:last-child {
   margin-right: 0;
 }
-nav ul li a {
+nav ul li a, .breadcrumbs ul li a {
   text-decoration: none;
   color: #4C5664;
   font-family: 'Open Sans';
@@ -226,11 +226,21 @@ nav ul li a {
   padding: .5rem;
   border: 2px solid rgba(78, 86, 100, 0);
 }
-nav ul li a:hover {
+nav ul li a:hover, .breadcrumbs ul li a:hover{
   border: 2px solid rgba(78, 86, 100, 1);
   transition: all 0.4s ease-in-out;
 }
+.breadcrumbs ul {
+  padding: 1.2rem;
+  width: 90%;
+  margin: 1rem auto 2rem auto;
+  border: 2px solid rgba(134,156,163,.1);
+}
 .active{
+  border-bottom: 2px solid rgba(78, 86, 100, 1);
+  transition: all 0.4s ease-in-out;
+}
+.breadcrumbs .active{
   border-bottom: 2px solid rgba(78, 86, 100, 1);
   transition: all 0.4s ease-in-out;
 }
@@ -305,11 +315,12 @@ nav ul li a:hover {
   padding: .2rem .4rem;
   border-radius: 50%;
   border: 2px solid rgba(78, 86, 100, 1);
-  background-color: rgba(78, 86, 100, 0);
+  background-color: rgba(255,255,255, .4);
   color: rgba(78, 86, 100, 1);
   font-family: 'Open Sans', sans-serif;
   font-weight: 100;
   font-size: 1.75rem;
+  z-index: 2;
   transition:all .2s ease-in-out;
   -webkit-transition:all .2s ease-in-out;
   -moz-transition:all .2s ease-in-out;
@@ -361,6 +372,9 @@ nav ul li a:hover {
     width: 100%;
     line-height: 3rem;
   }
+  nav ul li:nth-child(even) {
+    background-color: rgba(134,156,163,.3);
+  }
   .burger {
     display: block;
     float: left;
@@ -388,6 +402,9 @@ nav ul li a:hover {
   .grid-column {
     float:none;
     width:100%;
+  }
+  .breadcrumbs {
+    display: none;
   }
   .logo {
     margin:0 auto;
