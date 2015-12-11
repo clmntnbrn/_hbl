@@ -9,9 +9,10 @@ Author: Clementine Brown
 /*******************************************/
 
 /* 
+color: #4C5664;
 hover orange: #fe332f;
 filter a color: #D72442;
-color & footer color: #869CA3;
+footer color: #869CA3;
 footer hover color: #E3D6C5;
 */
 
@@ -114,12 +115,12 @@ a {
 
 .container {
   max-width: 1210px;
-  margin: 7rem auto;
+  margin: 2rem auto;
   position: relative;
 }
-.container-home {
+.container-inner {
   max-width: 1210px;
-  margin: 2rem auto;
+  margin: 7rem auto;
   position: relative;
 }
 .footer {
@@ -181,7 +182,7 @@ a {
   margin-top: 0;
 }
 .parallax-window-inner {
-  min-height: 500px;
+  min-height: 450px;
   background: transparent;
   position: relative;
   margin-top: 0;
@@ -280,13 +281,13 @@ nav ul li a:hover, .breadcrumbs ul li a:hover{
   margin: 0 auto;
   top: 100%;
   width: 100%;
-  color: #fff;
+  color: #4C5664;
   font-size: .9rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   text-align: center;
   overflow: hidden;
-  background: rgba(0,0,0,0.6);
+  background: rgba(255,255,255,0.7);
   -webkit-transition: top 0.3s;
   -o-transition: top 0.3s;
   -moz-transition: top 0.3s;
@@ -380,6 +381,9 @@ nav ul li a:hover, .breadcrumbs ul li a:hover{
     float: left;
     padding: 1rem;
     font-size: 1.5rem;
+  }
+  .parallax-window-inner {
+    min-height: 300px;
   }
   #scrollUp {
     display: none;
