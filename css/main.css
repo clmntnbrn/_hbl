@@ -13,7 +13,8 @@ color: #4C5664;
 hover orange: #fe332f;
 filter a color: #D72442;
 footer color: #869CA3;
-footer hover color: #E3D6C5;
+footer hover color: #87D1D2;
+overlay color: #371631;
 */
 
 /******************************************
@@ -56,9 +57,9 @@ html {
 /*******************************************/
 
 p {
-  font-size: .9rem;
+  font-size: .8rem;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
 }
 h1 {
   font-size: 4rem;
@@ -131,9 +132,12 @@ a {
 .footer a {
   text-decoration: none;
   color: #fff;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
 }
 .footer a:hover {
-  color: #E3D6C5;
+  color: #87D1D2;
 }
 
 /******************************************
@@ -143,7 +147,7 @@ a {
 .header-content {
   position: fixed;
   top: 0;
-  background-color: rgba(255,255,255, .8);
+  background-color: rgba(255,255,255, .9);
   width: 100%;
   z-index: 1;
   border-bottom: 2px solid rgba(134,156,163,.1);
@@ -209,6 +213,7 @@ a {
 }
 nav ul {
   margin: 2rem auto;
+  padding: 0;
 }
 nav ul li, .breadcrumbs ul li {
   position: relative;
@@ -231,6 +236,9 @@ nav ul li a:hover, .breadcrumbs ul li a:hover{
   border: 2px solid rgba(78, 86, 100, 1);
   transition: all 0.4s ease-in-out;
 }
+.breadcrumbs {
+  margin-bottom: 2rem;
+}
 .breadcrumbs ul {
   padding: 1.2rem;
   width: 90%;
@@ -245,7 +253,7 @@ nav ul li a:hover, .breadcrumbs ul li a:hover{
   border-bottom: 2px solid rgba(78, 86, 100, 1);
   transition: all 0.4s ease-in-out;
 }
-.burger {
+.burger, .breadcrumbs-burger {
   display: none;
   text-decoration: none;
   color: #4C5664;
@@ -281,7 +289,7 @@ nav ul li a:hover, .breadcrumbs ul li a:hover{
   margin: 0 auto;
   top: 100%;
   width: 100%;
-  color: #4C5664;
+  color: #371631;
   font-size: .9rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -355,19 +363,20 @@ nav ul li a:hover, .breadcrumbs ul li a:hover{
   }
   .img-contain {
   max-width: 90%;
+  }
 }
 @media only screen and (max-width:860px){
   .site-nav {
     text-align: left;
   }
-  nav ul {
+  nav ul, .breadcrumbs ul {
     display: none;
     width: 100%;
     float: left;
     padding: 0 1rem;
     margin: 0.5rem 0;
   }
-  nav ul li {
+  nav ul li, .breadcrumbs ul li {
     display: block;
     font-size: 1.5rem;
     width: 100%;
@@ -376,7 +385,7 @@ nav ul li a:hover, .breadcrumbs ul li a:hover{
   nav ul li:nth-child(even) {
     background-color: rgba(134,156,163,.3);
   }
-  .burger {
+  .burger, .breadcrumbs-burger {
     display: block;
     float: left;
     padding: 1rem;
