@@ -53,11 +53,11 @@
 		version: '2.1.5',
 
 		defaults: {
-			padding : 15,
+			padding : 2,
 			margin  : 20,
 
-			width     : 800,
-			height    : 600,
+			width     : 900,
+			height    : 700,
 			minWidth  : 100,
 			minHeight : 100,
 			maxWidth  : 9999,
@@ -149,27 +149,27 @@
 			// Properties for each animation type
 			// Opening fancyBox
 			openEffect  : 'fade', // 'elastic', 'fade' or 'none'
-			openSpeed   : 250,
+			openSpeed   : 400,
 			openEasing  : 'swing',
 			openOpacity : true,
 			openMethod  : 'zoomIn',
 
 			// Closing fancyBox
 			closeEffect  : 'fade', // 'elastic', 'fade' or 'none'
-			closeSpeed   : 250,
+			closeSpeed   : 400,
 			closeEasing  : 'swing',
 			closeOpacity : true,
 			closeMethod  : 'zoomOut',
 
 			// Changing next gallery item
-			nextEffect : 'elastic', // 'elastic', 'fade' or 'none'
-			nextSpeed  : 250,
+			nextEffect : 'fade', // 'elastic', 'fade' or 'none'
+			nextSpeed  : 300,
 			nextEasing : 'swing',
 			nextMethod : 'changeIn',
 
 			// Changing previous gallery item
-			prevEffect : 'elastic', // 'elastic', 'fade' or 'none'
-			prevSpeed  : 250,
+			prevEffect : 'fade', // 'elastic', 'fade' or 'none'
+			prevSpeed  : 300,
 			prevEasing : 'swing',
 			prevMethod : 'changeOut',
 
