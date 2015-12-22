@@ -413,6 +413,13 @@ nav ul li a:hover, .sub-nav ul li a:hover{
 .frame:hover .overlay {
   top: 80%;
 }
+.mobile-label p{
+  text-align: center;
+  margin: 1rem 0 2rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  display: none;
+}
 .img-contain {
   margin: 0 auto;
   width: 90%;
@@ -420,8 +427,14 @@ nav ul li a:hover, .sub-nav ul li a:hover{
 .img-contain img {
   margin-bottom: 3rem;
   box-shadow:0 1px 1px rgba(78, 86, 100, 0.3);
-  width: 100%;
+  max-width: 100%;
 }
+.portrait {
+  max-height: 720px;
+  display: block;
+  margin: 0 auto;
+}
+
 #scrollUp {
   height: 2.5rem;
   width: 2.5rem;
@@ -534,6 +547,12 @@ nav ul li a:hover, .sub-nav ul li a:hover{
     float:none;
     margin: 0 auto;
   }
+  .mobile-label p{
+    display: block;
+  }
+  .overlay {
+    display: none;
+  }
   .footer {
     text-align: center;
   }
@@ -556,9 +575,6 @@ nav ul li a:hover, .sub-nav ul li a:hover{
   }
   .sub-nav {
     display: none;
-  }
-  .logo {
-    margin:0 auto;
   }
 }
 
