@@ -120,10 +120,11 @@ a {
   position: relative;
 }
 .margin-top {
-  margin: 8rem auto;
+  margin: 6rem auto;
 }
 .footer {
   background-color: #4C5664;
+  padding: 1rem;
 }
 .footer a {
   text-decoration: none;
@@ -136,13 +137,13 @@ a {
   color: #87D1D2;
 }
 .footer p{
-  padding: 1rem;
   color: #fff;
+  margin: 0;
+  padding: 1rem 0;
 }
 .footer ul {
   float: right;
-  margin-top: 1.4rem;
-  padding-right: 1rem;
+  margin: 0;
 }
 .footer ul li {
   display: inline-block;
@@ -247,7 +248,7 @@ nav ul li a:hover, .sub-nav ul li a:hover{
   transition: all 0.4s ease-in-out;
 }
 .sub-nav {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .sub-nav ul {
   padding: 1.2rem;
@@ -258,6 +259,7 @@ nav ul li a:hover, .sub-nav ul li a:hover{
 }
 .active{
   border-bottom: 2px solid rgba(78, 86, 100, 1);
+  box-shadow:0 1px 0px rgba(78, 86, 100, 0.3);
   transition: all 0.4s ease-in-out;
 }
 .sub-nav .active{
@@ -417,6 +419,7 @@ nav ul li a:hover, .sub-nav ul li a:hover{
 }
 .img-contain img {
   margin-bottom: 3rem;
+  box-shadow:0 1px 1px rgba(78, 86, 100, 0.3);
   width: 100%;
 }
 #scrollUp {
@@ -425,9 +428,9 @@ nav ul li a:hover, .sub-nav ul li a:hover{
   bottom: 2.5rem;
   right: 2.5rem;
   padding: .2rem .4rem;
-  border-radius: 50%;
   border: 2px solid rgba(78, 86, 100, 1);
   background-color: rgba(255,255,255, .4);
+  box-shadow:0 1px 0px rgba(78, 86, 100, 0.3);
   color: rgba(78, 86, 100, 1);
   font-family: 'Open Sans', sans-serif;
   font-weight: 100;
@@ -440,7 +443,7 @@ nav ul li a:hover, .sub-nav ul li a:hover{
   -o-transition:all .2s ease-in-out;
 }
 #scrollUp:hover {
-  background-color: rgba(76, 86, 100, 1);
+  background-color: rgba(76, 86, 100, .8);
   color: #fff;
 }
 
@@ -465,7 +468,7 @@ nav ul li a:hover, .sub-nav ul li a:hover{
 
 .share-btn.twitter     { background: #55acee; }
 .share-btn.facebook    { background: #3B5998; }
-.share-btn.linkedin    { background: #4875B4; }
+.share-btn.tumblr    { background: #4875B4; }
 
 .share-btn:hover {
   background: #fff;
