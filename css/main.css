@@ -446,7 +446,6 @@ nav ul li a:hover, .sub-nav ul li a:hover{
   background-color: rgba(76, 86, 100, .8);
   color: #fff;
 }
-
 .share-btn {
     display: inline-block;
     color: #ffffff;
@@ -457,19 +456,15 @@ nav ul li a:hover, .sub-nav ul li a:hover{
     outline: none;
     text-align: center;
 }
-
-/*.share-btn:active {
-  position: relative;
-  top: 2px;
-  box-shadow: none;
-  color: #e2e2e2;
-  outline: none;
-}*/
-
-.share-btn.twitter     { background: #55acee; }
-.share-btn.facebook    { background: #3B5998; }
-.share-btn.tumblr    { background: #4875B4; }
-
+.share-btn.twitter {
+  background: #55acee;
+}
+.share-btn.facebook {
+  background: #3B5998;
+}
+.share-btn.tumblr {
+  background: #4875B4;
+}
 .share-btn:hover {
   background: #fff;
 }
