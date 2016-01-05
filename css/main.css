@@ -247,31 +247,6 @@ nav ul li a:hover, .sub-nav ul li a:hover{
   box-shadow:0 0 1px rgba(78, 86, 100, 0.3);
   transition: all 0.4s ease-in-out;
 }
-
-/* fallback nav */
-
-nav ul li ul.fallback {
-  display:none;
-}
-nav ul li:hover ul.fallback {
-  display:block;
-}
-nav ul li ul {
-  position:absolute;
-  width:110px;
-  background:#FFF;
-}
-nav ul li ul li {
-  width:110px;
-}
-nav ul li ul li a {
-  display:block; 
-  padding:15px 10px;
-  color:#444;
-}
-/*nav ul li ul li:hover a {
-  background:#F7F7F7;
-}*/
 .sub-nav {
   margin-bottom: 1rem;
 }
@@ -507,13 +482,6 @@ nav ul li ul li a {
 .share-btn:hover {
   background: #fff;
 }
-
-/******************************************
-/* DROPDOWN 2                 
-/*******************************************/
-
-
-
 /******************************************
 /* RESPONSIVE LAYOUT                   
 /*******************************************/
@@ -527,9 +495,6 @@ nav ul li ul li a {
   nav ul li a {
   font-size: .8rem;
   }
-  nav ul li ul.fallback {
-  display:none;
-}
 }
 @media only screen and (max-width:980px){
   .container {
@@ -546,9 +511,6 @@ nav ul li ul li a {
   .img-contain {
     max-width: 90%;
   }
-  nav ul li ul.fallback {
-  display:none;
-}
 }
 @media only screen and (max-width:860px){
   .site-nav {
@@ -581,12 +543,6 @@ nav ul li ul li a {
   #scrollUp {
     display: none;
   }
-  nav ul li ul.fallback {
-  display:none;
-}
-nav ul li:hover ul.fallback {
-  display:block;
-}
 }
 @media only screen and (max-width:700px){
   .grid-column {
