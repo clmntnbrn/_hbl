@@ -523,12 +523,37 @@ nav ul li ul li a {
     font-size: 2.5rem;
   }
 }
-@media only screen and (max-width:1115px) {
+@media only screen and (max-width:1110px) {
   nav ul li a {
-  font-size: .7rem;
+  font-size: .8rem;
   }
+  nav ul li ul.fallback {
+  display:none;
 }
-@media only screen and (max-width:1000px){
+}
+@media only screen and (max-width:980px){
+  .container {
+    width:100%;
+  }
+  .grid-third {
+    width:50%;
+    margin: 0 auto;
+  }
+  .grid-two-third {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .img-contain {
+    max-width: 90%;
+  }
+  nav ul li ul.fallback {
+  display:none;
+}
+}
+@media only screen and (max-width:860px){
+  .site-nav {
+    text-align: left;
+  }
   nav ul, .sub-nav ul {
     display: none;
     width: 100%;
@@ -550,33 +575,18 @@ nav ul li ul li a {
     display: block;
     float: left;
   }
-}
-@media only screen and (max-width:980px){
-  .container {
-    width:100%;
-  }
-  .grid-third {
-    width:50%;
-    margin: 0 auto;
-  }
-  .grid-two-third {
-    width: 50%;
-    margin: 0 auto;
-  }
-  .img-contain {
-    max-width: 90%;
-  }
-}
-@media only screen and (max-width:860px){
-  .site-nav {
-    text-align: left;
-  }
   .parallax-window-inner {
     min-height: 300px;
   }
   #scrollUp {
     display: none;
   }
+  nav ul li ul.fallback {
+  display:none;
+}
+nav ul li:hover ul.fallback {
+  display:block;
+}
 }
 @media only screen and (max-width:700px){
   .grid-column {
