@@ -305,7 +305,7 @@ nav ul li a:hover, .sub-nav ul li a:hover{
 #burger span, #sub-nav-burger span {
   display: block;
   position: absolute;
-  height: 13%;
+  height: 14%;
   width: 100%;
   border-radius: 8px;
   background: #4C5664;
@@ -416,30 +416,29 @@ nav ul li a:hover, .sub-nav ul li a:hover{
 .mobile-label p{
   text-align: center;
   margin: 1rem 0 2rem 0;
-  font-size: .9rem;
+  font-size: 1rem;
   font-weight: 600;
   display: none;
 }
 .img-contain {
   margin: 0 auto;
   width: 90%;
-  text-align: center;
 }
 .img-contain img {
   margin-bottom: 3rem;
   box-shadow:0 1px 1px rgba(78, 86, 100, 0.3);
   max-width: 100%;
 }
-/*.portrait {
+.portrait {
   max-height: 720px;
   display: block;
   margin: 0 auto;
-}*/
+}
 
 #scrollUp {
   height: 2.5rem;
   width: 2.5rem;
-  bottom: 6.5rem;
+  bottom: 2.5rem;
   right: 2.5rem;
   padding: .2rem .4rem;
   border: 2px solid rgba(78, 86, 100, 1);
@@ -491,12 +490,10 @@ nav ul li a:hover, .sub-nav ul li a:hover{
     font-size: 2.5rem;
   }
 }
-@media only screen and (max-width:1110px) {
-  nav ul li a {
-  font-size: .8rem;
-  }
-}
 @media only screen and (max-width:980px){
+  html {
+  font-size: 14px;
+  }
   .container {
     width:100%;
   }
@@ -509,7 +506,7 @@ nav ul li a:hover, .sub-nav ul li a:hover{
     margin: 0 auto;
   }
   .img-contain {
-    max-width: 90%;
+  max-width: 90%;
   }
 }
 @media only screen and (max-width:860px){
