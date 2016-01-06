@@ -11,9 +11,10 @@
 		<link href='https://fonts.googleapis.com/	css?family=Abril+Fatface' rel='stylesheet' type='	text/css'>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/jquery.fancybox.css">
 		<link rel="stylesheet" href="css/animate.css">
 	</head>
-	<body>
+	<body data-current-page="north-america">
 		<!-- .header-content -->
 		<div class="header-content grid-row clearfix" data-sr="enter bottom wait .05s over .7s">
 			<div class="grid-column grid-whole">
@@ -23,18 +24,7 @@
 				<span></span>
 				<span></span>
 			</div>
-				<nav class="site-nav">
-					<ul>
-						<li><a href="index.html">home</a></li>
-						<li><a href="asia.html">asia</a></li>
-						<li><a href="australasia.html">australasia</a></li>
-						<li><a href="eastern-europe.html">eastern europe</a></li>
-						<li><a href="europe.html">europe</a></li>
-						<li><a class="active" href="north-america.html">north america</a></li>
-						<li><a href="south-america.html">south america</a></li>
-						<li><a href="scandinavia.html">scandinavia</a></li>
-						<li><a href="other-places.html">other places</a></li>
-					</ul>
+				<nav  id="nav-container" class="site-nav">
 				</nav>
 			</div> 
 		</div> <!-- close .header-content -->
@@ -50,6 +40,11 @@
 				<div>
 					<ul>
 						<li><a class="active" href="chicago.html">chicago</a></li>
+						<li><a href="los-angeles.html">los angeles</a></li>
+						<li><a href="new-york.html">new york</a></li>
+						<li><a href="south-dakota.html">south dakota</a></li>
+						<li><a href="toronto.html">toronto</a></li>
+						<li><a href="vancouver.html">vancouver</a></li>
 					</ul>
 				</div>
 			</div>
@@ -57,9 +52,9 @@
 			<div class="grid-row clearfix">
 				<div class="grid-column grid-whole">
 					<div class="img-contain">
-						<a class="fancybox" rel="group" href="images/chicago/chicago-broadway-clementine-brown-2013.jpg"><img data-sr="enter bottom over .5s" src="images/chicago/chicago-broadway-clementine-brown-2013.jpg"/></a>
-						<a class="fancybox" rel="group" href="images/chicago/chicago-waterfront-clementine-brown-2013.jpg"><img data-sr="enter bottom over .5s" src="images/chicago/chicago-waterfront-clementine-brown-2013.jpg"/></a>
-						<a class="fancybox" rel="group" href="images/chicago/chicago-park-clementine-brown-2013.jpg"><img data-sr="enter bottom over .5s" src="images/chicago/chicago-park-clementine-brown-2013.jpg"/></a>
+						<a class="fancybox" rel="group" href="images/chicago/chicago-broadway-clementine-brown-2013.jpg"><img data-sr="enter bottom wait .5s over .7s" src="images/chicago/chicago-broadway-clementine-brown-2013.jpg"/></a>
+						<a class="fancybox" rel="group" href="images/chicago/chicago-waterfront-clementine-brown-2013.jpg"><img data-sr="enter bottom wait .5s over .7s" src="images/chicago/chicago-waterfront-clementine-brown-2013.jpg"/></a>
+						<a class="fancybox" rel="group" href="images/chicago/chicago-park-clementine-brown-2013.jpg"><img data-sr="enter bottom wait .5s over .7s" src="images/chicago/chicago-park-clementine-brown-2013.jpg"/></a>
 					</div><!-- close .img-contain -->
 				</div><!-- close .grid-whole -->
 			</div><!-- close .grid-row -->
@@ -84,14 +79,15 @@
     	</div>
 		</footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="../js/main.js"></script>
-		<script type="text/javascript" src="../js/jquery.fancybox.js"></script>
+		<script src="js/main.js"></script>
+		<script type="text/javascript" src="js/nav.js"></script>
+		<script type="text/javascript" src="js/jquery.fancybox.js"></script>
 		<script>
 			$(document).ready(function() {
 				$(".fancybox").fancybox();
 			});
 		</script>
-		<script src='../js/scrollReveal.js'></script>
+		<script src='js/scrollReveal.js'></script>
 		<script>
 			var config = {
 					easing: 'ease-in',
@@ -101,7 +97,7 @@
 			}
 			window.sr = new scrollReveal();
 		</script>
-		<script src='../js/jquery.scrollUp.js'></script>
+		<script src='js/jquery.scrollUp.js'></script>
 		<script>
 			$(function () {
 				$.scrollUp({

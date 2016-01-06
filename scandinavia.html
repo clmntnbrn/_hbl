@@ -13,7 +13,7 @@
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/animate.css">
 	</head>
-	<body>
+	<body data-current-page="scandinavia">
 	<!-- .header-content -->
 		<div class="header-content grid-row clearfix" data-sr="enter bottom wait .05s over .7s">
 			<div class="grid-column grid-whole">
@@ -23,23 +23,12 @@
 				<span></span>
 				<span></span>
 			</div>
-				<nav class="site-nav">
-					<ul>
-						<li><a href="index.html">home</a></li>
-						<li><a href="asia.html">asia</a></li>
-						<li><a href="australasia.html">australasia</a></li>
-						<li><a href="eastern-europe.html">eastern europe</a></li>
-						<li><a href="europe.html">europe</a></li>
-						<li><a href="north-america.html">north america</a></li>
-						<li><a href="south-america.html">south america</a></li>
-						<li><a class="active" href="scandinavia.html">scandinavia</a></li>
-						<li><a href="other-places.html">other places</a></li>
-					</ul>
+				<nav id="nav-container" class="site-nav">
 				</nav>
 			</div> 
 		</div> <!-- close .header-content -->
 		<!-- parallax window -->
-		<div class="parallax-window small" data-parallax="scroll" data-speed="0.4" data-image-src="images/iceland/iceland.jpg">
+		<div class="parallax-window small" data-parallax="scroll" data-speed="0.4" data-image-src="images/norway/norway-Ben-Elle.jpg">
 			<div class="text inner grid-whole" data-sr="enter bottom wait .5s over .7s">
 				<h1>scandinavia</h1>
 				<h2>2007, 2012, 2014</h2>
@@ -49,35 +38,28 @@
 			<div class="grid-row clearfix animated fadeInUp">
 				<div class="grid-column grid-third">
 					<div class="frame" data-sr="enter bottom wait .1s over .7s move 80px">
-						<a href="#.html"><img src="images/thumbs/placeholder.jpg"/>
+						<a href="denmark.html"><img src="images/thumbs/denmark.jpg"/>
 						<div class="overlay"><p>denmark</p></div></a>
 					</div>
 					<div class="mobile-label"><p>denmark</p></div>
 				</div>
 				<div class="grid-column grid-third">
-					<div class="frame" data-sr="enter bottom wait .5s over .7s move 80px">
-						<a href="#.html"><img src="images/thumbs/placeholder.jpg"/>
+					<div class="frame" data-sr="enter bottom wait .3s over .7s move 80px">
+						<a href="finland.html"><img src="images/thumbs/finland.jpg"/>
 						<div class="overlay"><p>finland</p></div></a>
 					</div>
 					<div class="mobile-label"><p>finland</p></div>
 				</div>
 				<div class="grid-column grid-third">
 					<div class="frame" data-sr="enter bottom wait .5s over .7s move 80px">
-						<a href="#.html"><img src="images/thumbs/placeholder.jpg"/>
-						<div class="overlay"><p>iceland</p></div></a>
-					</div>
-					<div class="mobile-label"><p>iceland</p></div>
-				</div>
-				<div class="grid-column grid-third">
-					<div class="frame" data-sr="enter bottom wait .5s over .7s move 80px">
-						<a href="#.html"><img src="images/thumbs/placeholder.jpg"/>
+						<a href="norway.html"><img src="images/thumbs/norway.jpg"/>
 						<div class="overlay"><p>norway</p></div></a>
 					</div>
 					<div class="mobile-label"><p>norway</p></div>
 				</div>
 				<div class="grid-column grid-third">
-					<div class="frame" data-sr="enter bottom wait .5s over .7s move 80px">
-						<a href="#.html"><img src="images/thumbs/placeholder.jpg"/>
+					<div class="frame" data-sr="enter bottom wait .1s over .7s move 80px">
+						<a href="sweden.html"><img src="images/thumbs/sweden.jpg"/>
 						<div class="overlay"><p>sweden</p></div></a>
 					</div>
 					<div class="mobile-label"><p>sweden</p></div>
@@ -107,6 +89,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script type="text/javascript" src="js/parallax.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/nav.js"></script>
 		<script src='js/scrollReveal.js'></script>
     <script>
       window.sr = new scrollReveal();

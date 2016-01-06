@@ -11,9 +11,10 @@
 		<link href='https://fonts.googleapis.com/	css?family=Abril+Fatface' rel='stylesheet' type='	text/css'>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/jquery.fancybox.css">
 		<link rel="stylesheet" href="css/animate.css">
 	</head>
-	<body>
+	<body data-current-page="australasia">
 		<!-- .header-content -->
 		<div class="header-content grid-row clearfix" data-sr="enter bottom wait .05s over .7s">
 			<div class="grid-column grid-whole">
@@ -23,18 +24,7 @@
 				<span></span>
 				<span></span>
 			</div>
-				<nav class="site-nav">
-					<ul>
-						<li><a href="index.html">home</a></li>
-						<li><a href="asia.html">asia</a></li>
-						<li><a class="active" href="australasia.html">australasia</a></li>
-						<li><a href="eastern-europe.html">eastern europe</a></li>
-						<li><a href="europe.html">europe</a></li>
-						<li><a href="north-america.html">north america</a></li>
-						<li><a href="south-america.html">south america</a></li>
-						<li><a href="scandinavia.html">scandinavia</a></li>
-						<li><a href="other-places.html">other places</a></li>
-					</ul>
+				<nav id="nav-container" class="site-nav">
 				</nav>
 			</div> 
 		</div> <!-- close .header-content -->
@@ -96,6 +86,7 @@
 		</footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="js/main.js"></script>
+		<script type="text/javascript" src="js/nav.js"></script>
 		<script type="text/javascript" src="js/jquery.fancybox.js"></script>
 		<script>
 			$(document).ready(function() {

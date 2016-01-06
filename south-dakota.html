@@ -11,10 +11,11 @@
 		<link href='https://fonts.googleapis.com/	css?family=Abril+Fatface' rel='stylesheet' type='	text/css'>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/jquery.fancybox.css">
 		<link rel="stylesheet" href="css/animate.css">
 	</head>
-	<body data-current-page="europe">
-	<!-- .header-content -->
+	<body data-current-page="north-america">
+		<!-- .header-content -->
 		<div class="header-content grid-row clearfix" data-sr="enter bottom wait .05s over .7s">
 			<div class="grid-column grid-whole">
 			<div id="burger">
@@ -27,52 +28,35 @@
 				</nav>
 			</div> 
 		</div> <!-- close .header-content -->
-		<!-- parallax window -->
-		<div class="parallax-window small" data-parallax="scroll" data-speed="0.4" data-image-src="images/lithuania/glass-building-lithuania-travelling-clementine-brown-2012-clmntnbrn.co.uk.jpg">
-			<div class="text inner grid-whole" data-sr="enter bottom wait .5s over .7s">
-				<h1>europe</h1>
-				<h2>many times</h2>
+		<div class="container margin-top">
+			<div class="grid-row clearfix">
+			<div class="sub-nav grid-column grid-whole" data-sr="enter bottom wait .5s over .7s">
+			<div id="sub-nav-burger">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
 			</div>
-		</div><!-- close .parallax-window -->
-		<div class="container">
-			<div class="grid-row clearfix animated fadeInUp">
-			<div class="grid-column grid-third">
-					<div class="frame" data-sr="enter bottom wait .1s over .7s move 80px">
-						<a href="#.html"><img src="images/thumbs/placeholder.jpg"/>
-						<div class="overlay"><p>austria</p></div></a>
-					</div>
-					<div class="mobile-label"><p>austria</p></div>
+				<div>
+					<ul>
+						<li><a href="chicago.html">chicago</a></li>
+						<li><a href="los-angeles.html">los angeles</a></li>
+						<li><a href="new-york.html">new york</a></li>
+						<li><a class="active" href="south-dakota.html">south dakota</a></li>
+						<li><a href="toronto.html">toronto</a></li>
+						<li><a href="vancouver.html">vancouver</a></li>
+					</ul>
 				</div>
-				<div class="grid-column grid-third">
-					<div class="frame" data-sr="enter bottom wait .3s over .7s move 80px">
-						<a href="italy.html"><img src="images/thumbs/italy.jpg"/>
-						<div class="overlay"><p>italy</p></div></a>
-					</div>
-					<div class="mobile-label"><p>italy</p></div>
-				</div>
-				<div class="grid-column grid-third">
-					<div class="frame" data-sr="enter bottom wait .5s over .7s move 80px">
-						<a href="#.html"><img src="images/thumbs/placeholder.jpg"/>
-						<div class="overlay"><p>portugal</p></div></a>
-					</div>
-					<div class="mobile-label"><p>portugal</p></div>
-				</div>
-				<div class="grid-column grid-third">
-					<div class="frame" data-sr="enter bottom wait .1s over .7s move 80px">
-						<a href="#.html"><img src="images/thumbs/placeholder.jpg"/>
-						<div class="overlay"><p>france</p></div></a>
-					</div>
-					<div class="mobile-label"><p>france</p></div>
-				</div>
-				<div class="grid-column grid-third">
-					<div class="frame" data-sr="enter bottom wait .3s over .7s move 80px">
-						<a href="#.html"><img src="images/thumbs/placeholder.jpg"/>
-						<div class="overlay"><p>spain</p></div></a>
-					</div>
-					<div class="mobile-label"><p>spain</p></div>
-				</div>
+			</div>
+			</div>
+			<div class="grid-row clearfix">
+				<div class="grid-column grid-whole">
+					<div class="img-contain">
+						<a class="fancybox" rel="group" href="images/south-korea/main-placeholder.jpg"><img data-sr="enter bottom wait .5s over .7s" src="images/south-korea/main-placeholder.jpg"/></a>
+					</div><!-- close .img-contain -->
+				</div><!-- close .grid-whole -->
 			</div><!-- close .grid-row -->
-		</div><!-- close .container-home -->
+		</div><!-- close .container -->
 		<footer class="footer grid-row clearfix" data-sr="enter bottom over .5s">
 			<div class="grid-column grid-third">
 				<p>&copy; <a href="www.clmntnbrn.co.uk">Clementine Brown</a> 2001-2015</p>
@@ -92,18 +76,38 @@
     		</ul>
     	</div>
 		</footer>
-
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script type="text/javascript" src="js/parallax.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
+		<script src="js/main.js"></script>
 		<script type="text/javascript" src="js/nav.js"></script>
+		<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+		<script>
+			$(document).ready(function() {
+				$(".fancybox").fancybox();
+			});
+		</script>
 		<script src='js/scrollReveal.js'></script>
-    <script>
-      window.sr = new scrollReveal();
-    </script>
-    <!-- <script src='js/skrollr.js'></script>
-    <script type="text/javascript">
-    var s = skrollr.init();
-    </script> -->
+		<script>
+			var config = {
+					easing: 'ease-in',
+					reset:  true,
+					delay:  'onload',
+					vFactor: 0.10
+			}
+			window.sr = new scrollReveal();
+		</script>
+		<script src='js/jquery.scrollUp.js'></script>
+		<script>
+			$(function () {
+				$.scrollUp({
+					scrollName: 'scrollUp', // Element ID
+					topDistance: '400', // Distance from top before showing element (px)
+					topSpeed: 300, // Speed back to top (ms)
+					animation: 'fade', // Fade, slide, none
+					animationInSpeed: 300, // Animation in speed (ms)
+					animationOutSpeed: 300, // Animation out speed (ms)
+					scrollText: '⌃', // Text for element
+				});
+			});
+		</script>
 	</body>
 </html>

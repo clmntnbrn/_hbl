@@ -13,7 +13,7 @@
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/animate.css">
 	</head>
-	<body>
+	<body data-current-page="eastern-europe">
 	<!-- .header-content -->
 		<div class="header-content grid-row clearfix" data-sr="enter bottom wait .05s over .7s">
 			<div class="grid-column grid-whole">
@@ -23,18 +23,7 @@
 				<span></span>
 				<span></span>
 			</div>
-				<nav class="site-nav">
-					<ul>
-						<li><a href="index.html">home</a></li>
-						<li><a href="asia.html">asia</a></li>
-						<li><a href="australasia.html">australasia</a></li>
-						<li><a class="active" href="eastern-europe.html">eastern europe</a></li>
-						<li><a href="europe.html">europe</a></li>
-						<li><a href="north-america.html">north america</a></li>
-						<li><a href="south-america.html">south america</a></li>
-						<li><a href="scandinavia.html">scandinavia</a></li>
-						<li><a href="other-places.html">other places</a></li>
-					</ul>
+				<nav id="nav-container" class="site-nav">
 				</nav>
 			</div> 
 		</div> <!-- close .header-content -->
@@ -55,7 +44,7 @@
 					<div class="mobile-label"><p>croatia</p></div>
 				</div>
 				<div class="grid-column grid-third">
-					<div class="frame" data-sr="enter bottom wait .1s over .7s move 80px">
+					<div class="frame" data-sr="enter bottom wait .3s over .7s move 80px">
 						<a href="estonia.html"><img src="images/thumbs/estonia.jpg"/>
 						<div class="overlay"><p>estonia</p></div></a>
 					</div>
@@ -69,14 +58,14 @@
 					<div class="mobile-label"><p>latvia</p></div>
 				</div>
 				<div class="grid-column grid-third">
-					<div class="frame" data-sr="enter bottom wait .5s over .7s move 80px">
+					<div class="frame" data-sr="enter bottom wait .1s over .7s move 80px">
 						<a href="lithuania.html"><img src="images/thumbs/lithuania.jpg"/>
 						<div class="overlay"><p>lithuania</p></div></a>
 					</div>
 					<div class="mobile-label"><p>lithuania</p></div>
 				</div>
 				<div class="grid-column grid-third">
-					<div class="frame" data-sr="enter bottom wait .5s over .7s move 80px">
+					<div class="frame" data-sr="enter bottom wait .3s over .7s move 80px">
 						<a href="poland.html"><img src="images/thumbs/poland.jpg"/>
 						<div class="overlay"><p>poland</p></div></a>
 					</div>
@@ -114,6 +103,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script type="text/javascript" src="js/parallax.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/nav.js"></script>
 		<script src='js/scrollReveal.js'></script>
     <script>
       window.sr = new scrollReveal();

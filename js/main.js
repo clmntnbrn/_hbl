@@ -32,6 +32,7 @@ $(document).ready(function(){
       $('.nav-icon').show();
     }
   });
+
   //sub-nav
   $('#sub-nav-burger').on('click', function(event){
       event.preventDefault();
@@ -53,16 +54,6 @@ $(document).ready(function(){
     $(this).toggleClass('open');
   });
 
-  //fallback
-  $('nav li ul').hide().removeClass('fallback');
-  $('nav li').hover(
-    function () {
-      $('ul', this).stop().slideDown(100);
-    },
-    function () {
-    $('ul', this).stop().slideUp(100);
-    }
-  );
 });
 
 

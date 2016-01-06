@@ -13,7 +13,7 @@
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/animate.css">
 	</head>
-	<body>
+	<body data-current-page="other-places">
 	<!-- .header-content -->
 		<div class="header-content grid-row clearfix" data-sr="enter bottom wait .05s over .7s">
 			<div class="grid-column grid-whole">
@@ -23,33 +23,29 @@
 				<span></span>
 				<span></span>
 			</div>
-				<nav class="site-nav">
-					<ul>
-						<li><a href="index.html">home</a></li>
-						<li><a href="asia.html">asia</a></li>
-						<li><a href="australasia.html">australasia</a></li>
-						<li><a href="eastern-europe.html">eastern europe</a></li>
-						<li><a href="europe.html">europe</a></li>
-						<li><a href="north-america.html">north america</a></li>
-						<li><a href="south-america.html">south america</a></li>
-						<li><a href="scandinavia.html">scandinavia</a></li>
-						<li><a class="active" href="other-places.html">other places</a></li>
-					</ul>
+				<nav id="nav-container" class="site-nav">
 				</nav>
 			</div> 
 		</div> <!-- close .header-content -->
 		<!-- parallax window -->
-		<div class="parallax-window small" data-parallax="scroll" data-speed="0.4" data-image-src="images/lithuania/glass-building-lithuania-travelling-clementine-brown-2012-clmntnbrn.co.uk.jpg">
+		<div class="parallax-window small" data-parallax="scroll" data-speed="0.4" data-image-src="images/iceland/iceland.jpg">
 			<div class="text inner grid-whole" data-sr="enter bottom wait .5s over .7s">
 				<h1>other places</h1>
-				<h2>many times</h2>
+				<h2>2007</h2>
 			</div>
 		</div><!-- close .parallax-window -->
 		<div class="container">
 			<div class="grid-row clearfix animated fadeInUp">
-				<div class="grid-column grid-third">
+			<div class="grid-column grid-third">
 					<div class="frame" data-sr="enter bottom wait .1s over .7s move 80px">
-						<a href="#.html"><img src="images/thumbs/placeholder.jpg"/>
+						<a href="iceland.html"><img src="images/thumbs/iceland.jpg"/>
+						<div class="overlay"><p>iceland</p></div></a>
+					</div>
+					<div class="mobile-label"><p>iceland</p></div>
+				</div>
+				<div class="grid-column grid-third">
+					<div class="frame" data-sr="enter bottom wait .3s over .7s move 80px">
+						<a href="morocco.html"><img src="images/thumbs/morocco.jpg"/>
 						<div class="overlay"><p>morocco</p></div></a>
 					</div>
 					<div class="mobile-label"><p>morocco</p></div>
@@ -79,6 +75,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script type="text/javascript" src="js/parallax.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/nav.js"></script>
 		<script src='js/scrollReveal.js'></script>
     <script>
       window.sr = new scrollReveal();
