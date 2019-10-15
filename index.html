@@ -1,114 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-    	<meta charset="utf-8">
-    	<meta name="description" content="site description goes here">
-    	<meta name="keywords" content="site, keywords, go, here">
+		<meta charset="utf-8">
+		<meta name="description" content="Travel photography site by Clementine Brown">
+		<meta name="keywords" content="travel, photography, 35mm, film, europe, awesome, art, camera, digital, photograph, Clementine Brown, clmntnbrn">
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 		<title>Heartbreak Launderette</title>
-		<link href='https://fonts.googleapis.com/	css?family=Open+Sans:400,300,600,700' rel='	stylesheet' type='text/css'>
-  	<link href='https://fonts.googleapis.com/	css?family=Abril+Fatface' rel='stylesheet' type='	text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/animate.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
 	</head>
-	<body>
-		<!-- HEADER SECTION -->
-		<!-- <div class="header-content"> -->
-			<div class="header-content grid-row clearfix">
-				<div class="grid-column grid-whole">
-					<div class="header">
-						<div class="logo">
-							<h1>Heartbreak Launderette</h1>
-						</div>
-						<nav class="site-nav">
-							<a class="burger" href="#">☰</a>
-							<ul>
-								<li><a href="#">home</a></li>
-								<li><a href="#">europe</a></li>
-								<li><a href="#">scandinavia</a></li>
-								<li><a href="#">asia</a></li>
-								<li><a href="#">australaisia</a></li>
-								<li><a href="#">the americas</a></li>
-							</ul>
-						</nav>
-					</div>
-				</div> 
+	<body data-current-page="home">
+		<!-- .header-content -->
+		<div class="header-content grid-row clearfix" data-sr="enter bottom wait .05s over .7s">
+			<div class="grid-column grid-whole">
+			<div id="burger">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
 			</div>
-		<!-- </div> -->
-		<!-- CLOSE HEADER SECTION -->
+				<nav id="nav-container" class="site-nav">
+				</nav>
+			</div> 
+		</div> <!-- close .header-content -->
+		<!-- parallax window -->
+		<div class="parallax-window" data-parallax="scroll" data-speed="0.4" data-image-src="images/peru/peru.jpg">
+			<div class="text grid-whole" data-sr="enter bottom wait .5s over .7s">
+				<h1>from when I went away</h1>
+				<h2>travel photography 2001-2015</h2>
+			</div>
+		</div><!-- close .parallax-window -->
+		<!-- container -->
 		<div class="container">
-			<div class="grid-row clearfix animated fadeInUp">
+			<div class="grid-row clearfix">
 				<div class="grid-column grid-third">
-					<div class="frame">
-						<a href="#"><img src="images/thumbs/australia.jpg"/></a>
+					<div class="frame" data-sr="enter bottom wait .1s over .7s move 80px">
+						<a href="argentina.html"><img src="images/thumbs/argentina.jpg"/>
+						<div class="overlay"><p>argentina</p></div></a>
 					</div>
+					<div class="mobile-label"><p>argentina</p></div>
 				</div>
 				<div class="grid-column grid-third">
-					<div class="frame">
-						<a href="#"><img src="images/thumbs/bali.jpg"/></a>
+					<div class="frame" data-sr="enter bottom wait .3s over .7s move 80px">
+						<a href="australia.html"><img src="images/thumbs/australia.jpg"/>
+						<div class="overlay"><p>australia</p></div></a>
 					</div>
+					<div class="mobile-label"><p>australia</p></div>
 				</div>
 				<div class="grid-column grid-third">
-					<div class="frame">
-						<a href="#"><img src="images/thumbs/chicago.jpg"/></a>
+					<div class="frame" data-sr="enter bottom wait .5s over .7s move 80px">
+						<a href="bali.html"><img src="images/thumbs/bali.jpg"/>
+						<div class="overlay"><p>bali</p></div></a>
 					</div>
+					<div class="mobile-label"><p>bali</p></div>
 				</div>
 				<div class="grid-column grid-third">
-					<div class="frame">
-						<a href="#"><img src="images/thumbs/china.jpg"/></a>
+					<div class="frame" data-sr="enter bottom wait .1s over .7s move 80px">
+						<a href="chicago.html"><img src="images/thumbs/chicago.jpg"/>
+						<div class="overlay"><p>chicago</p></div></a>
 					</div>
+					<div class="mobile-label"><p>chicago</p></div>
 				</div>
 				<div class="grid-column grid-third">
-					<div class="frame">
-						<a href="#"><img src="images/thumbs/estonia.jpg"/></a>
+					<div class="frame" data-sr="enter bottom wait .3s over .7s move 80px">
+						<a href="china.html"><img src="images/thumbs/china.jpg"/>
+						<div class="overlay"><p>china</p></div></a>
 					</div>
+					<div class="mobile-label"><p>china</p></div>
 				</div>
 				<div class="grid-column grid-third">
-					<div class="frame">
-						<a href="#"><img src="images/thumbs/latvia.jpg"/></a>
+					<div class="frame" data-sr="enter bottom wait .5s over .7s move 80px">
+						<a href="denmark.html"><img src="images/thumbs/denmark.jpg"/>
+						<div class="overlay"><p>denmark</p></div></a>
 					</div>
+					<div class="mobile-label"><p>denmark</p></div>
 				</div>
 				<div class="grid-column grid-third">
-					<div class="frame">
-						<a href="#"><img src="images/thumbs/lithuania.jpg"/></a>
+					<div class="frame" data-sr="enter bottom wait .1s over .7s move 80px">
+						<a href="estonia.html"><img src="images/thumbs/estonia.jpg"/>
+						<div class="overlay"><p>estonia</p></div></a>
 					</div>
+					<div class="mobile-label"><p>estonia</p></div>
 				</div>
 				<div class="grid-column grid-third">
-					<div class="frame">
-						<a href="#"><img src="images/thumbs/los-angeles.jpg"/></a>
+					<div class="frame" data-sr="enter bottom wait .3s over .7s move 80px">
+						<a href="equador.html"><img src="images/thumbs/equador.jpg"/>
+						<div class="overlay"><p>equador</p></div></a>
 					</div>
+					<div class="mobile-label"><p>equador</p></div>
 				</div>
 				<div class="grid-column grid-third">
-					<div class="frame">
-						<a href="#"><img src="images/thumbs/new-york.jpg"/></a>
+					<div class="frame" data-sr="enter bottom wait .5s over .7s move 80px">
+						<a href="finland.html"><img src="images/thumbs/finland.jpg"/>
+							<div class="overlay"><p>finland</p></div></a>
 					</div>
+					<div class="mobile-label"><p>finland</p></div>
 				</div>
 				<div class="grid-column grid-third">
-					<div class="frame">
-						<a href="#"><img src="images/thumbs/new-zealand.jpg"/></a>
+					<div class="frame" data-sr="enter bottom wait .1s over .7s move 80px">
+						<a href="iceland.html"><img src="images/thumbs/iceland.jpg"/>
+						<div class="overlay"><p>iceland</p></div></a>
 					</div>
+					<div class="mobile-label"><p>iceland</p></div>
 				</div>
 				<div class="grid-column grid-third">
-					<div class="frame">
-						<a href="#"><img src="images/thumbs/norway.jpg"/></a>
+					<div class="frame" data-sr="enter bottom wait .3s over .7s move 80px">
+						<a href="italy.html"><img src="images/thumbs/italy.jpg"/>
+						<div class="overlay"><p>italy</p></div></a>
 					</div>
+					<div class="mobile-label"><p>italy</p></div>
 				</div>
 				<div class="grid-column grid-third">
-					<div class="frame">
-						<a href="#"><img src="images/thumbs/poland.jpg"/></a>
+					<div class="frame" data-sr="enter bottom wait .5s over .7s move 80px">
+						<a href="latvia.html"><img src="images/thumbs/latvia.jpg"/>
+						<div class="overlay"><p>latvia</p></div></a>
 					</div>
+					<div class="mobile-label"><p>latvia</p></div>
 				</div>
 				<div class="grid-column grid-third">
-					<div class="frame">
-						<a href="#"><img src="images/thumbs/singapore.jpg"/></a>
+					<div class="frame" data-sr="enter bottom wait .1s over .7s move 80px">
+						<a href="lithuania.html"><img src="images/thumbs/lithuania.jpg"/>
+						<div class="overlay"><p>lithuania</p></div></a>
 					</div>
+					<div class="mobile-label"><p>lithuania</p></div>
 				</div>
-			</div><!-- CLOSE ROW -->
-		</div><!-- CLOSE CONTAINER -->
-		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-		<script src="js/main.js"></script>
+				<div class="grid-column grid-third">
+					<div class="frame" data-sr="enter bottom wait .3s over .7s move 80px">
+						<a href="los-angeles.html"><img src="images/thumbs/los-angeles.jpg"/>
+						<div class="overlay"><p>los angeles</p></div></a>
+					</div>
+					<div class="mobile-label"><p>los angeles</p></div>
+				</div>
+				<div class="grid-column grid-third">
+					<div class="frame" data-sr="enter bottom wait .5s over .7s move 80px">
+						<a href="morocco.html"><img src="images/thumbs/morocco.jpg"/>
+						<div class="overlay"><p>morocco</p></div></a>
+					</div>
+					<div class="mobile-label"><p>morocco</p></div>
+				</div>
+				<div class="grid-column grid-third">
+					<div class="frame" data-sr="enter bottom wait .1s over .7s move 80px">
+						<a href="new-york.html"><img src="images/thumbs/new-york.jpg"/><div class="overlay"><p>new york</p></div></a>
+					</div>
+					<div class="mobile-label"><p>new york</p></div>
+				</div>
+				<div class="grid-column grid-third">
+					<div class="frame" data-sr="enter bottom wait .3s over .7s move 80px">
+						<a href="new-zealand.html"><img src="images/thumbs/new-zealand.jpg"/>
+						<div class="overlay"><p>new zealand</p></div></a>
+					</div>
+					<div class="mobile-label"><p>new zealand</p></div>
+				</div>
+				<div class="grid-column grid-third">
+					<div class="frame" data-sr="enter bottom wait .5s over .7s move 80px">
+						<a href="norway.html"><img src="images/thumbs/norway.jpg"/>
+						<div class="overlay"><p>norway</p></div></a>
+					</div>
+					<div class="mobile-label"><p>norway</p></div>
+				</div>
+				<div class="grid-column grid-third">
+					<div class="frame" data-sr="enter bottom wait .1s over .7s move 80px">
+						<a href="peru.html"><img src="images/thumbs/peru.jpg"/>
+						<div class="overlay"><p>peru</p></div></a>
+					</div>
+					<div class="mobile-label"><p>peru</p></div>
+				</div>
+				<div class="grid-column grid-third">
+					<div class="frame" data-sr="enter bottom wait .3s over .7s move 80px">
+						<a href="poland.html"><img src="images/thumbs/poland.jpg"/>
+						<div class="overlay"><p>poland</p></div></a>
+					</div>
+					<div class="mobile-label"><p>poland</p></div>
+				</div>
+				<div class="grid-column grid-third">
+					<div class="frame" data-sr="enter bottom wait .5s over .7s move 80px">
+						<a href="singapore.html"><img src="images/thumbs/singapore.jpg"/>
+							<div class="overlay"><p>singapore</p></div></a>
+					</div>
+					<div class="mobile-label"><p>singapore</p></div>
+				</div>
+				<div class="grid-column grid-third">
+					<div class="frame" data-sr="enter bottom wait .1s over .7s move 80px">
+						<a href="slovenia.html"><img src="images/thumbs/slovenia.jpg"/>
+							<div class="overlay"><p>slovenia</p></div></a>
+					</div>
+					<div class="mobile-label"><p>slovenia</p></div>
+				</div>
+				<div class="grid-column grid-third">
+					<div class="frame" data-sr="enter bottom wait .3s over .7s move 80px">
+						<a href="sweden.html"><img src="images/thumbs/sweden.jpg"/>
+							<div class="overlay"><p>sweden</p></div></a>
+					</div>
+					<div class="mobile-label"><p>sweden</p></div>
+				</div>
+				<div class="grid-column grid-third">
+					<div class="frame" data-sr="enter bottom wait .5s over .7s move 80px">
+						<a href="uruguay.html"><img src="images/thumbs/uruguay.jpg"/>
+							<div class="overlay"><p>uruguay</p></div></a>
+					</div>
+					<div class="mobile-label"><p>uruguay</p></div>
+				</div>
+			</div><!-- close .grid-row -->
+		</div><!-- close .container-home -->
+		<footer class="footer grid-row clearfix" data-sr="enter bottom over .5s">
+			<div class="grid-column grid-third">
+				<p>&copy; <a href="www.clmntnbrn.co.uk">Clementine Brown</a> 2001-2015</p>
+			</div>
+			<div class="grid-column grid-two-third">
+				<ul>
+					<li>
+						<a href="http://twitter.com/share?url=http://heartbreaklaunderette.co.uk	&amp;text=check out this photosite HBL	&amp;via=clmntnbrn" target="_blank" class="share-btn twitter">
+    				<i class="fa fa-twitter"></i></a>
+    			</li>
+    			<li>
+    				<a href="http://www.facebook.com/sharer/sharer.php?u=http://heartbreaklaunderette.co.uk" target="_blank" class="share-btn facebook">
+    				<i class="fa fa-facebook"></i></a></li>
+    			<li>
+    				<a href="http://www.tumblr.com/share/link?url=http://heartbreaklaunderette.co.uk" target="_blank" class="share-btn tumblr">
+    				<i class="fa fa-tumblr"></i></a></li>
+    		</ul>
+    	</div>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js/parallax.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/nav.js"></script>
+		<script src='js/scrollReveal.js'></script>
+		<script>
+			window.sr = new scrollReveal();
+		</script>
 	</body>
 </html>
